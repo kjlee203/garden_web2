@@ -71,4 +71,8 @@ $(document).ready(function() {
     });
     //scrollbar
     $('#events').tinyscrollbar();
+    //meals carousel
+    $('#mealsCarousel').carousel({  
+      interval: 2000  
+    });
 });
