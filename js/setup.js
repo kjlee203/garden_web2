@@ -75,4 +75,12 @@ $(document).ready(function() {
     $('#mealsCarousel').carousel({  
       interval: 2000  
     });
+
+    //photoviews 
+    //var $container = $('#container');
+    // initialize
+    $('#photo-thumbs').masonry({
+      //columnWidth: 200,
+      itemSelector: '.photo-thumb'
+    });
 });

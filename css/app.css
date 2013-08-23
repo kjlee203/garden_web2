@@ -102,3 +102,32 @@
 /* line 52, app.scss */
 .teacher-comment {
   margin-bottom: 45px; }
+
+/***photoviews.html****/
+/* line 57, app.scss */
+.photo-thumb {
+  width: 23.5%;
+  margin: 5px;
+  background: pink; }
+
+/* line 63, app.scss */
+.tools {
+  padding: 3px; }
+  /* line 65, app.scss */
+  .tools a {
+    margin: 0 0 0 12px;
+    text-decoration: none;
+    color: #000; }
+
+/* line 71, app.scss */
+.author {
+  padding: 5px;
+  border-top: 1px solid #cdcdcd; }
+  /* line 74, app.scss */
+  .author .avatar {
+    width: 32px;
+    height: 32px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    margin: 3px 0; }

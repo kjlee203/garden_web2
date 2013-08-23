@@ -53,4 +53,30 @@
 	margin-bottom: 45px;
 }
 
-//meals carousel
+/***photoviews.html****/
+.photo-thumb{
+	width:23.5%;
+	margin:5px;
+	background:pink;
+	//height:100px;
+}
+.tools{
+	padding:3px;
+	a {
+		margin: 0 0 0 12px;
+		text-decoration: none;
+		color: #000;
+	}
+}
+.author{
+	padding:5px;
+	border-top:1px solid #cdcdcd;
+	.avatar{
+	width:32px;
+	height:32px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	margin:3px 0;
+	}
+}
