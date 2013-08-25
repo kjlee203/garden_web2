@@ -43,44 +43,28 @@ $(function(){
 });
 
 $(document).ready(function() {
+   
+    
+
 
     // page is now ready, initialize the calendar...
 
-    $('#calendar').fullCalendar({
-      events: 'http://www.google.com/calendar/feeds/usa__en%40holiday.calendar.google.com/public/basic',
+    // $('#calendar').fullCalendar({
+    //   events: 'http://www.google.com/calendar/feeds/usa__en%40holiday.calendar.google.com/public/basic',
 			
-      			eventClick: function(event) {
-      				// opens events in a popup window
-      				window.open(event.url, 'gcalevent', 'width=700,height=600');
-      				return false;
-      			},
+    //   			eventClick: function(event) {
+    //   				// opens events in a popup window
+    //   				window.open(event.url, 'gcalevent', 'width=700,height=600');
+    //   				return false;
+    //   			},
 			
-      			loading: function(bool) {
-      				if (bool) {
-      					$('#loading').show();
-      				}else{
-      					$('#loading').hide();
-      				}
-      			}
-    });
-
-    //每日表现tab
-    $('#dayviewsTab a').click(function (e) {
-      e.preventDefault();
-      $(this).tab('show');
-    });
-    //scrollbar
-    $('#events').tinyscrollbar();
-    //meals carousel
-    $('#mealsCarousel').carousel({  
-      interval: 2000  
-    });
-
-    //photoviews 
-    //var $container = $('#container');
-    // initialize
-    $('#photo-thumbs').masonry({
-      //columnWidth: 200,
-      itemSelector: '.photo-thumb'
-    });
+    //   			loading: function(bool) {
+    //   				if (bool) {
+    //   					$('#loading').show();
+    //   				}else{
+    //   					$('#loading').hide();
+    //   				}
+    //   			}
+    // });
+   
 });

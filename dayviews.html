@@ -22,7 +22,6 @@
     <script src="js/jquery.tablesorter.min.js"></script>
     <script src="js/jquery.peity.min.js"></script>
     <script src="js/fullcalendar.min.js"></script>
-    <script src="js/jquery.tinyscrollbar.min.js"></script>
     <script src="js/gcal.js"></script>
     <script src="js/setup.js"></script>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
@@ -196,11 +195,12 @@
       <div class="tab-content">
         <div class="tab-pane active" id="activity">
           <form class="form-horizontal">
+            <!-- <h4 class="header">老师评价建议</h4> -->
             <fieldset class="teacher-comment">
               <div class="control-group">
                 <label class="control-label" for="inputStar">今日星星</label>
                 <div class="controls">
-                  <input id="inputStar" placeholder="xx">
+                  <input type="text" id="inputStar" class="input-xxlarge" placeholder="xx">
                 </div>
               </div>
               <div class="control-group">
@@ -210,7 +210,9 @@
                 </div>
               </div>
             </fieldset>
-            <div class="divider"></div>
+            <!-- <div class="divider"></div> -->
+            <!-- <hr/> -->
+            <!-- <h4 class="header">个人表现情况</h4> -->
             <div class="control-group">
               <label class="control-label" for="inputStar">早餐</label>
               <div class="controls">
@@ -339,4 +341,21 @@
   </body>
   <script src="js/d3-setup.js"></script><script>protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://'; address = protocol + window.location.host + window.location.pathname + '/ws'; socket = new WebSocket(address);
 socket.onmessage = function(msg) { msg.data == 'reload' && window.location.reload() }</script>
+  <script type="text/javascript">
+    //meals carousel
+    $('#mealsCarousel').carousel({  
+      interval: 10000  
+    });
+  </script>
+
+    <script src="js/jquery.tinyscrollbar.min.js"></script>
+  <script type="text/javascript">
+     //scrollbar
+    $('#events').tinyscrollbar();
+     //每日表现tab
+    $('#dayviewsTab a').click(function (e) {
+      e.preventDefault();
+      $(this).tab('show');
+    });
+  </script>
 </html>

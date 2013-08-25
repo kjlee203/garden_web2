@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="description" content="description of your site" />
+    <meta name="author" content="author of the site" />
+    <title>Garden校园通</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap-responsive.css" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/toastr.css" />
+    <link rel="stylesheet" href="css/fullcalendar.css" />
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.knob.js"></script>
+    <script src="js/d3.v3.min.js"></script>
+    <script src="js/jquery.sparkline.min.js"></script>
+    <script src="js/toastr.js"></script>
+    <script src="js/jquery.tablesorter.min.js"></script>
+    <script src="js/jquery.peity.min.js"></script>
+    <script src="js/gcal.js"></script>
+    <script src="js/setup.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+  <body>
+    <div id="in-nav">
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <ul class="pull-right">
+              <!-- <li><a href="#">Link1</a></li> -->
+              <li><a href="#">常见问题</a></li>
+              <li><a href="#">联系我们</a></li>
+              <!-- <li><a href="login.html">Login</a></li> -->
+              <li class="dropdown">
+                <a id="personal-menu" class="dropdown-toggle"  data-target="#" data-toggle="dropdown" href="#">
+                  <img class="person-avatar"src="img/photos/nate.png">
+                  <span>张晓明<i class="caret"></i></span>
+                  <span class="badge badge-red-dark">5</span>
+                </a>
+                <ul class="dropdown-menu"  role="menu" aria-labelledby="personal-menu">
+                  <li>
+                    <a href="#">新消息</a>
+                  </li>
+                  <li>
+                    <a href="#">个人资料</a>
+                  </li>
+                  <li>
+                    <a href="#">密码修改</a>
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                    <a href="#">退出系统</a>
+                  </li>
+                </ul>
+              </li>
+            </ul><a id="logo" href="index.html">
+              <h4>My<strong>Admin</strong></h4></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="in-sub-nav">
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <ul>
+              <li><a href="index.html"><i class="batch home"></i><br />首页</a></li>
+              <li><span class="label label-important pull-right">08</span><a href="stream.html"><i class="batch stream"></i><br />校园资讯</a></li>
+              <li><span class="label label-important pull-right">04</span><a href="messages.html"><i class="batch plane"></i><br />短消息</a></li>
+              <li><a href="dayviews.html"><i class="batch calendar"></i><br />每日情况</a></li>
+              <li><a href="photoviews.html" class="active"><i class="batch quill"></i><br />感动一刻</a></li>
+              <li><a href="faq.html"><i class="batch forms"></i><br />建议交流</a></li>
+              <li><a href="users.html"><i class="batch users"></i><br />Users</a></li>
+              <li><a href="settings.html"><i class="batch settings"></i><br />Settings</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page">
+      <div class="page-container">
+        <div class="container">
+          <div class="row">
+            <div class="span3">
+              <h4><i class="icon-list pull-left"></i>资讯栏目</h4>
+              <div class="sidebar">
+                <ul class="col-nav">
+                  <li><a href="#" class="active"> <i class="icon-globe"></i><span class="title">校园新闻</span><span class="pull-right">35</span></a></li>
+                  <li><a href="#"> <i class="icon-star"></i><span class="title">通知公告</span><span class="pull-right">35</span></a></li>
+                  <li><a href="#" class="active"> <i class="icon-globe"></i><span class="title">注意事项</span><span class="pull-right">35</span></a></li>
+                </ul>
+                <ul class="col-nav">
+                  <li><a href="#"> <i class="icon-star"></i><span class="title">校车信息</span><span class="pull-right">35</span></a></li>
+                  <li><a href="#" class="active"> <i class="icon-globe"></i><span class="title">兴趣教育</span><span class="pull-right">35</span></a></li>
+                </ul>
+                <ul class="col-nav">
+                  <li><a href="#"> <i class="icon-star"></i><span class="title">下载专区</span><span class="pull-right">35</span></a></li>                 
+                </ul>
+              </div>
+            </div>
+            <div class="span9">
+              <div class="btn-group pull-right">
+                <button class="btn"> <i class="icon-refresh"></i></button>
+                <button data-toggle="dropdown" class="btn dropdown-toggle"><span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">最近一周</a></li>
+                  <li><a href="#">最近一个月</a></li>
+                  <li><a href="#">所有</a></li>
+                </ul>
+              </div>
+              <h4 class="header">列表</h4>
+              <ul class="info-list">
+                <li class="item">
+                  <span class="time">2013-08-23</span><a href="#"><h4 class="title">区教育局领导莅临指导工作</h4></a>
+                  
+                </li>
+                <li class="item">
+                  <span class="time">2013-07-11</span><a href="#"><h4 class="title">开展社区实践教育的活动</h4></a>
+                  
+                </li>
+                <li class="item">
+                  <span class="time">2013-05-25</span><a href="#"><h4 class="title">六一儿童节彩排活动</h4></a>
+                  
+                </li>
+                <li class="item">
+                  <span class="time">2013-05-11</span><a href="#"><h4 class="title">手工剪纸比赛</h4></a>
+                  
+                </li>
+                <li class="item">
+                  <span class="time">2013-01-09</span><a href="#"><h4 class="title">诗歌朗诵与口算比赛</h4></a>
+                  
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+<!--<script type="text/javascript">
+(function() {
+  var delay;
+
+  delay = function(ms, func) {
+    return setTimeout(func, ms);
+  };
+
+  toastr.options = {
+    positionClass: 'toast-bottom-left'
+  };
+
+  delay(1000, function() {
+    return toastr.success('Have fun storming the castle!', 'Miracle Max Says');
+  });
+
+  delay(1500, function() {
+    return toastr.warning('My name is Inigo Montoya. You Killed my father, prepare to die!');
+  });
+
+  delay(2000, function() {
+    return toastr.error('I do not think that word means what you think it means.', 'Inconceivable!');
+  });
+
+}).call(this);
+</script>-->
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <p class="pull-right">Admin Theme by Nathan Speller</p>
+            <p>&copy; Copyright 2013 文忠科技有限公司</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="js/d3-setup.js"></script><script>protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://'; address = protocol + window.location.host + window.location.pathname + '/ws'; socket = new WebSocket(address);
+socket.onmessage = function(msg) { msg.data == 'reload' && window.location.reload() }</script>
+  <script type="text/javascript">
+    //var $j=JQuery.noConflict(); 
+    $('.dropdown-toggle').dropdown();
+  </script>
+
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script type="text/javascript">
+    $('#photo-thumbs').masonry({
+      //columnWidth: 200,
+      itemSelector: '.photo-thumb'
+    });
+  </script>
+</html>

@@ -1,4 +1,103 @@
+.page{
+	min-height:650px;
+}
+
 /**index.html****/
+.chat-box{
+	padding:2px;
+	.box-content{
+		list-style:none;
+		.box-item{
+			position:relative;
+			.avatar{
+				position:absolute;
+				top: 0;
+				width: 32px;
+				height: 32px;
+			}
+			.name{
+				margin-left: 45px;
+			}
+			.time{
+				position:absolute;
+				top: 0;
+				right: 0;
+			}
+			p{
+				margin-left: 45px;
+			}
+
+		}
+	}
+}
+
+#mainCarousel{
+	margin:0 auto;
+	background:#eee;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	.item{
+		img{
+			width: auto;
+			height: 300px;
+			max-height: 300px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+		}
+	}
+}
+
+.scroll-news{
+	margin:15px 0 ;
+
+}
+/* liScroll styles */
+
+.tickercontainer { /* the outer div with the black border */
+//border: 1px solid #000;
+//background: #fff; 
+//width: 738px; 
+//height: 27px; 
+margin: 0; 
+padding: 0;
+padding-left:100px;
+//overflow: hidden; 
+}
+.tickercontainer .mask { /* that serves as a mask. so you get a sort of padding both left and right */
+position: relative;
+// left: 10px;
+// top: 8px;
+// width: 718px;
+overflow: hidden;
+}
+ul.newsticker { /* that's your list */
+position: relative;
+//left: 750px;
+//font: bold 10px Verdana;
+list-style-type: none;
+margin: 0;
+padding: 0;
+
+}
+ul.newsticker li {
+float: left; /* important: display inline gives incorrect results when you check for elem's width */
+margin: 0;
+padding: 0;
+//background: #fff;
+}
+ul.newsticker a {
+white-space: nowrap;
+padding: 0;
+color: #ff0000;
+//font: bold 10px Verdana;
+margin: 0 50px 0 0;
+} 
+ul.newsticker span {
+margin: 0 10px 0 0;
+} 
+
 .person-avatar{
 	width:32px;
 	height: 32px;
@@ -14,6 +113,11 @@
 }
 
 /**dayviews.html****/
+#dayviewsTab{
+	border-bottom: 1px solid #eee;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
 .day-star{
 
 }
@@ -52,6 +156,12 @@
 .teacher-comment{
 	margin-bottom: 45px;
 }
+#activity .form-horizontal .control-label{
+	width:100px;
+}
+#activity .form-horizontal .controls{
+	margin-left:120px;
+}
 
 /***photoviews.html****/
 .photo-thumb{
@@ -59,6 +169,9 @@
 	margin:5px;
 	background:pink;
 	//height:100px;
+	.text{
+		padding:5px 0 0 5px;
+	}
 }
 .tools{
 	padding:3px;
@@ -66,6 +179,14 @@
 		margin: 0 0 0 12px;
 		text-decoration: none;
 		color: #000;
+		padding:0 3px;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+
+		&:hover,&:active{
+			background:#fff;
+		}
 	}
 }
 .author{
@@ -78,5 +199,120 @@
 	-moz-border-radius: 2px;
 	border-radius: 2px;
 	margin:3px 0;
+	}
+}
+
+
+
+/**photo.html***/
+.distribute{
+	img{
+		float: left;
+		width: 60px;
+		height: 60px;
+		margin-right: 10px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+	}
+	.info{
+		.name{
+			font-weight:  bolder;
+			font-size: 1.1em;
+		}
+		.time{
+			color: #000;
+			margin: 2px 0 0 12px;
+		}
+	}
+
+}
+.photo-large{
+	margin: 20px 0 0 0;
+	background:#ccc;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	img{
+		padding:20px;
+	}
+}
+.responses{
+	margin:5px;
+	.comments-section{
+		ol{
+			list-style: none;
+		}
+		.comments{
+			.comment{
+				border-bottom:1px solid #cdcdcd;
+				padding:15px 0;
+				.avatar{
+					width: 32px;
+					height: 32px;
+					-webkit-border-radius: 3px;
+					-moz-border-radius: 3px;
+					border-radius: 3px;
+					float: left;
+					margin-right: 15px;
+				}
+				p{
+					margin-left: 47px;
+					padding-top:10px;
+				}
+				.time{
+					margin-left: 47px;
+				}
+			}
+		}
+	}
+	
+}
+.meta-actions{
+	padding-top: 10px;
+	.meta-action{
+		border-bottom:1px solid #ddd;
+		line-height: 1.4em;
+		padding:12px;
+	}
+}
+
+
+/***infoviews.html*****/
+.sidebar .col-nav li a{
+	border-bottom:none;
+	.title{
+		padding-left:10px;
+	}
+}
+.sidebar ul.col-nav{
+	border-bottom:1px solid #eee;
+	padding: 5px 0;
+}
+.info-list{
+	list-style:none;
+	padding: 0 20px;
+	margin: 0;
+	.item{
+		position:relative;
+		border-bottom:1px solid #eeeeee;
+		.title{
+			padding: 10px 0;
+			margin: 0;
+			color: blue;
+			font-size: 1.3em;
+			
+		}
+		.time{
+			position:absolute;
+			right: 0;
+
+		}
+	}
+	li.item:hover{
+		border-bottom:1px solid #eee;
+		border-top:2px solid #33aa33;
+		padding:15px 0;
+		background:#eee;
 	}
 }
