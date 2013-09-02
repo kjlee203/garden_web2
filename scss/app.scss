@@ -351,9 +351,21 @@ ul.forum-list{
 	list-style:none;
 	li{
 		border-bottom: 1px solid rgb(124, 153, 228);
-		padding: 15px 5px;
-		border-left: 4px solid rgb(124, 153, 228);
+		padding: 0px 5px;
+		//border-left: 4px solid rgb(124, 153, 228);
 		margin-top: 5px;
+		.item-body{
+			margin-left: 65px;
+			.content{
+				margin-right: 70px;
+				height: 3em;
+				overflow: hidden;
+				a{
+					text-decoration: none;
+					color: rgba(80, 72, 72,0.8);
+				}
+			}
+		}
 	}
 	.title{
 		cursor: pointer;

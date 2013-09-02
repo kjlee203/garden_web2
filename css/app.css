@@ -389,10 +389,21 @@ ul.forum-list {
   /* line 352, app.scss */
   ul.forum-list li {
     border-bottom: 1px solid #7c99e4;
-    padding: 15px 5px;
-    border-left: 4px solid #7c99e4;
+    padding: 0px 5px;
     margin-top: 5px; }
-  /* line 358, app.scss */
+    /* line 357, app.scss */
+    ul.forum-list li .item-body {
+      margin-left: 65px; }
+      /* line 359, app.scss */
+      ul.forum-list li .item-body .content {
+        margin-right: 70px;
+        height: 3em;
+        overflow: hidden; }
+        /* line 363, app.scss */
+        ul.forum-list li .item-body .content a {
+          text-decoration: none;
+          color: rgba(80, 72, 72, 0.8); }
+  /* line 370, app.scss */
   ul.forum-list .title {
     cursor: pointer;
     font-size: 1.1em;
