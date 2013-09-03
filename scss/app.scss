@@ -23,6 +23,9 @@
 	-moz-border-radius: 2px;
 	border-radius: 2px;
 }
+.with-padding{
+	padding-left:3px;
+}
 
 /**index.html****/
 .chat-box{
@@ -142,9 +145,15 @@ margin: 0 10px 0 0;
 
 /**dayviews.html****/
 #dayviewsTab{
-	border-bottom: 1px solid #eee;
-	padding-bottom: 5px;
+	border-bottom: 2px solid #ffa93c;
+	padding-bottom: 1px;
 	padding-left: 10px;
+
+	.active>a,.active>a:hover,.active>a:focus{
+		background: #ffa93c;
+		border: 1px solid #FDC987;
+		border-bottom: 1px solid #ffa93c;
+	}
 }
 .day-star{
 
@@ -319,29 +328,34 @@ margin: 0 10px 0 0;
 }
 .info-list{
 	list-style:none;
-	padding: 0 20px;
+	//padding: 0 20px;
 	margin: 0;
 	.item{
-		position:relative;
+		//position:relative;
 		border-bottom:1px solid #eeeeee;
+		padding: 10px 15px;
 		.title{
-			padding: 10px 0;
+			//padding: 10px 0;
 			margin: 0;
 			color: blue;
 			font-size: 1.3em;
 			
 		}
 		.time{
-			position:absolute;
-			right: 0;
+			//position:absolute;
+			//right: 0;
 
 		}
 	}
 	li.item:hover{
 		border-bottom:1px solid #eee;
 		border-top:2px solid #33aa33;
-		padding:15px 0;
+		padding: 10px 15px;
 		background:#eee;
+		a {
+			text-decoration: none;
+			
+		}
 	}
 }
 

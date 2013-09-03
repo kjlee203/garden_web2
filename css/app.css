@@ -26,48 +26,52 @@
   -moz-border-radius: 2px;
   border-radius: 2px; }
 
+/* line 26, app.scss */
+.with-padding {
+  padding-left: 3px; }
+
 /**index.html****/
-/* line 28, app.scss */
+/* line 31, app.scss */
 .chat-box {
   padding: 2px; }
-  /* line 30, app.scss */
+  /* line 33, app.scss */
   .chat-box .box-content {
     list-style: none; }
-    /* line 32, app.scss */
+    /* line 35, app.scss */
     .chat-box .box-content .box-item {
       position: relative; }
-      /* line 34, app.scss */
+      /* line 37, app.scss */
       .chat-box .box-content .box-item .avatar {
         position: absolute;
         top: 0;
         width: 32px;
         height: 32px; }
-      /* line 40, app.scss */
+      /* line 43, app.scss */
       .chat-box .box-content .box-item .name {
         margin-left: 45px; }
-      /* line 43, app.scss */
+      /* line 46, app.scss */
       .chat-box .box-content .box-item .time {
         position: absolute;
         top: 0;
         right: 0; }
-      /* line 48, app.scss */
+      /* line 51, app.scss */
       .chat-box .box-content .box-item p {
         margin-left: 45px; }
 
-/* line 56, app.scss */
+/* line 59, app.scss */
 .chat-footer {
   text-align: right;
   padding-top: 10px;
-  border-top: 1px solid #eee; }
+  border-top: 1px solid #eeeeee; }
 
-/* line 62, app.scss */
+/* line 65, app.scss */
 #mainCarousel {
   margin: 0 auto;
   background: #eee;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px; }
-  /* line 69, app.scss */
+  /* line 72, app.scss */
   #mainCarousel .item img {
     width: auto;
     height: 300px;
@@ -76,25 +80,25 @@
     -moz-border-radius: 5px;
     border-radius: 5px; }
 
-/* line 80, app.scss */
+/* line 83, app.scss */
 .scroll-news {
   margin: 15px 0; }
 
 /* liScroll styles */
-/* line 86, app.scss */
+/* line 89, app.scss */
 .tickercontainer {
   /* the outer div with the black border */
   margin: 0;
   padding: 0;
   padding-left: 100px; }
 
-/* line 96, app.scss */
+/* line 99, app.scss */
 .tickercontainer .mask {
   /* that serves as a mask. so you get a sort of padding both left and right */
   position: relative;
   overflow: hidden; }
 
-/* line 103, app.scss */
+/* line 106, app.scss */
 ul.newsticker {
   /* that's your list */
   position: relative;
@@ -102,25 +106,25 @@ ul.newsticker {
   margin: 0;
   padding: 0; }
 
-/* line 112, app.scss */
+/* line 115, app.scss */
 ul.newsticker li {
   float: left;
   /* important: display inline gives incorrect results when you check for elem's width */
   margin: 0;
   padding: 0; }
 
-/* line 118, app.scss */
+/* line 121, app.scss */
 ul.newsticker a {
   white-space: nowrap;
   padding: 0;
   color: #ff0000;
   margin: 0 50px 0 0; }
 
-/* line 125, app.scss */
+/* line 128, app.scss */
 ul.newsticker span {
   margin: 0 10px 0 0; }
 
-/* line 129, app.scss */
+/* line 132, app.scss */
 .person-avatar {
   width: 32px;
   height: 32px;
@@ -128,20 +132,25 @@ ul.newsticker span {
   -moz-border-radius: 2px;
   border-radius: 2px; }
 
-/* line 137, app.scss */
+/* line 140, app.scss */
 .badge-red-dark {
   position: absolute;
   top: 0;
   left: 0; }
 
 /**dayviews.html****/
-/* line 144, app.scss */
+/* line 147, app.scss */
 #dayviewsTab {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 5px;
+  border-bottom: 2px solid #ffa93c;
+  padding-bottom: 1px;
   padding-left: 10px; }
+  /* line 152, app.scss */
+  #dayviewsTab .active > a, #dayviewsTab .active > a:hover, #dayviewsTab .active > a:focus {
+    background: #ffa93c;
+    border: 1px solid #fdc987;
+    border-bottom: 1px solid #ffa93c; }
 
-/* line 152, app.scss */
+/* line 161, app.scss */
 .little-star {
   display: inline-block;
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA6lJREFUeNq0VdtLFFEc/mZmXfO2FnaxC8XGhmFZRjeCgiDqJXoIeqkoCIQICnos7Km/oKinQAgCX3qIHoIg6ClQhMguCJa6XrKsLTPNdtu5nL7fnDPuaqv71GG+OTNzzvl+999Y6vVq/DMswubN4VxBfAqAnLoMhVYE6jo2OBk4XPcVsP0Llhox+CXIraLnGZJMqwOwcSf85iOOr8F5rKH0wEK5YYebIqhotvWz4CsFeGhH9XJg514KsM5gGk3IFWuylACfZIFTgJLZ1kJ+k+AndiNvHcemJiDPb3aVA9e6hozS+8oKkMuytM9Dv9vaiiwxoUTjdlTWkhwaTdtl/RxmkMJsWX7GIMt7lkH0hAx65oUg9HcLcRKpZpIrfUIUsCsd+Pl2jPsXylvwiaw/ldbYjfxvb6SWB6n9LcRrJAZci8A9zTvEsnOM0VE8XJdaSoClHqzbB6VO0T1JxiwZpqJigkoK1tYDyS20RmnApG+MGElTse8I01XHuo/nxrkvTYVeYKXTiRNjvqUeb/yN76hCXQJIEKtW6tAIoa/mk4cqGUInipm8cH1ykinNoExNA/EcuZyLOD58L8YMmUBdLInGzZowDFygyZSBMKqi2pirl7kNFMQ0TtDihhVMjgG6nNaEqrrWEbj+KD72ac2zSqoW+GOyxjWx8Qyid1mTPbJXzsh7QO3GBmX9Ck4NPzEC7DRxCPlgAMPvqAl7g2treGUQCuMsteSRfHxE3i/idPpuIYukePL2KHGIB/rw7pU5WKT9YsibefIHyUeFpw3nB+/NT9PCgQniMNO1F0NjBZeUg9RH/4jPsxfQ9qHj3zrw5mmVoT9v4PM344Yy5OKaAbolh0e49P5+6Ur2rELGyMixkflR08P8NSzIJBk1zJzMVGqJZsfm5psm54eBa0F1AqEQz8TCMwi/mYr2jBL1DVL5zbi5NV5aQHjQEOTD1tyMBHPZVYX+VBED1lLTtWx6Ncs0sazJHsvR/4hs0FTaRW6RvTmakacA6f3yPc7DDexF75m+/TOyQ1pjFfbtZ5ugGbN/tPukBmzVwvvb0j+cyAKbFR1zalFdTeI6lj5/hz3dLP9fz7lvD7GBuI3uniz63wCNtKqqkhbSO/FY6yIuijIi/IMlUc8DPovmZQ/wOdPL78eII8RLYpK4SmyBG3Sgq9vHcD+QWi9uTC3yyzStR6OLeIrBoV7OZ4ldxLMFewTsmmgjtmE224mJL2k+d5Ru10rhfw4b/3n8FWAAwna8wfz7wJUAAAAASUVORK5CYII=");
@@ -150,41 +159,41 @@ ul.newsticker span {
   width: 32px;
   height: 32px; }
 
-/* line 160, app.scss */
+/* line 169, app.scss */
 .event:hover, .event:active {
   background: #cdcdcd; }
 
 /**scrollbar**/
-/* line 166, app.scss */
+/* line 175, app.scss */
 #events {
   clear: both; }
 
-/* line 167, app.scss */
+/* line 176, app.scss */
 #events .viewport {
   height: 100%;
   overflow: hidden;
   position: relative; }
 
-/* line 168, app.scss */
+/* line 177, app.scss */
 #events .overview {
   list-style: none;
   position: absolute;
   left: 0;
   top: 0; }
 
-/* line 170, app.scss */
+/* line 179, app.scss */
 *
 #events .thumb .end,
 #events .thumb {
   background-color: #005580; }
 
-/* line 171, app.scss */
+/* line 180, app.scss */
 #events .scrollbar {
   position: relative;
   float: right;
   width: 15px; }
 
-/* line 172, app.scss */
+/* line 181, app.scss */
 #events .track {
   background-color: #D8EEFD;
   height: 100%;
@@ -195,7 +204,7 @@ ul.newsticker span {
   -moz-border-radius: 5px;
   border-radius: 5px; }
 
-/* line 175, app.scss */
+/* line 184, app.scss */
 #events .thumb {
   height: 20px;
   width: 8px;
@@ -207,17 +216,17 @@ ul.newsticker span {
   -moz-border-radius: 5px;
   border-radius: 5px; }
 
-/* line 178, app.scss */
+/* line 187, app.scss */
 #events .thumb .end {
   overflow: hidden;
   height: 5px;
   width: 8px; }
 
-/* line 179, app.scss */
+/* line 188, app.scss */
 #events .disable {
   display: none; }
 
-/* line 180, app.scss */
+/* line 189, app.scss */
 .noSelect {
   user-select: none;
   -o-user-select: none;
@@ -226,32 +235,32 @@ ul.newsticker span {
   -webkit-user-select: none; }
 
 /**teacher-comment***/
-/* line 184, app.scss */
+/* line 193, app.scss */
 .teacher-comment {
   margin-bottom: 45px; }
 
-/* line 187, app.scss */
+/* line 196, app.scss */
 #activity .form-horizontal .control-label {
   width: 100px; }
 
-/* line 190, app.scss */
+/* line 199, app.scss */
 #activity .form-horizontal .controls {
   margin-left: 120px; }
 
 /***photoviews.html****/
-/* line 195, app.scss */
+/* line 204, app.scss */
 .photo-thumb {
   width: 23.5%;
   margin: 5px;
   background: pink; }
-  /* line 200, app.scss */
+  /* line 209, app.scss */
   .photo-thumb .text {
     padding: 5px 0 0 5px; }
 
-/* line 204, app.scss */
+/* line 213, app.scss */
 .tools {
   padding: 3px; }
-  /* line 206, app.scss */
+  /* line 215, app.scss */
   .tools a {
     margin: 0 0 0 12px;
     text-decoration: none;
@@ -260,15 +269,15 @@ ul.newsticker span {
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px; }
-    /* line 215, app.scss */
+    /* line 224, app.scss */
     .tools a:hover, .tools a:active {
       background: #fff; }
 
-/* line 220, app.scss */
+/* line 229, app.scss */
 .author {
   padding: 5px;
   border-top: 1px solid #cdcdcd; }
-  /* line 223, app.scss */
+  /* line 232, app.scss */
   .author .avatar {
     width: 32px;
     height: 32px;
@@ -278,7 +287,7 @@ ul.newsticker span {
     margin: 3px 0; }
 
 /**photo.html***/
-/* line 237, app.scss */
+/* line 246, app.scss */
 .distribute img {
   float: left;
   width: 60px;
@@ -287,37 +296,37 @@ ul.newsticker span {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px; }
-/* line 247, app.scss */
+/* line 256, app.scss */
 .distribute .info .name {
   font-weight: bolder;
   font-size: 1.1em; }
-/* line 251, app.scss */
+/* line 260, app.scss */
 .distribute .info .time {
   color: #000;
   margin: 2px 0 0 12px; }
 
-/* line 258, app.scss */
+/* line 267, app.scss */
 .photo-large {
   margin: 20px 0 0 0;
   background: #ccc;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px; }
-  /* line 264, app.scss */
+  /* line 273, app.scss */
   .photo-large img {
     padding: 20px; }
 
-/* line 268, app.scss */
+/* line 277, app.scss */
 .responses {
   margin: 5px; }
-  /* line 271, app.scss */
+  /* line 280, app.scss */
   .responses .comments-section ol {
     list-style: none; }
-  /* line 275, app.scss */
+  /* line 284, app.scss */
   .responses .comments-section .comments .comment {
     border-bottom: 1px solid #cdcdcd;
     padding: 15px 0; }
-    /* line 278, app.scss */
+    /* line 287, app.scss */
     .responses .comments-section .comments .comment .avatar {
       width: 32px;
       height: 32px;
@@ -326,73 +335,70 @@ ul.newsticker span {
       border-radius: 3px;
       float: left;
       margin-right: 15px; }
-    /* line 287, app.scss */
+    /* line 296, app.scss */
     .responses .comments-section .comments .comment p {
       margin-left: 47px;
       padding-top: 10px; }
-    /* line 291, app.scss */
+    /* line 300, app.scss */
     .responses .comments-section .comments .comment .time {
       margin-left: 47px; }
 
-/* line 299, app.scss */
+/* line 308, app.scss */
 .meta-actions {
   padding-top: 10px; }
-  /* line 301, app.scss */
+  /* line 310, app.scss */
   .meta-actions .meta-action {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #dddddd;
     line-height: 1.4em;
     padding: 12px; }
 
 /***infoviews.html*****/
-/* line 310, app.scss */
+/* line 319, app.scss */
 .sidebar .col-nav li a {
   border-bottom: none; }
-  /* line 312, app.scss */
+  /* line 321, app.scss */
   .sidebar .col-nav li a .title {
     padding-left: 10px; }
 
-/* line 316, app.scss */
+/* line 325, app.scss */
 .sidebar ul.col-nav {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #eeeeee;
   padding: 5px 0; }
 
-/* line 320, app.scss */
+/* line 329, app.scss */
 .info-list {
   list-style: none;
-  padding: 0 20px;
   margin: 0; }
-  /* line 324, app.scss */
+  /* line 333, app.scss */
   .info-list .item {
-    position: relative;
-    border-bottom: 1px solid #eeeeee; }
-    /* line 327, app.scss */
+    border-bottom: 1px solid #eeeeee;
+    padding: 10px 15px; }
+    /* line 337, app.scss */
     .info-list .item .title {
-      padding: 10px 0;
       margin: 0;
       color: blue;
       font-size: 1.3em; }
-    /* line 334, app.scss */
-    .info-list .item .time {
-      position: absolute;
-      right: 0; }
-  /* line 340, app.scss */
+  /* line 350, app.scss */
   .info-list li.item:hover {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #eeeeee;
     border-top: 2px solid #33aa33;
-    padding: 15px 0;
+    padding: 10px 15px;
     background: #eee; }
+    /* line 355, app.scss */
+    .info-list li.item:hover a {
+      text-decoration: none; }
 
 /***forumviews.html**********/
-/* line 350, app.scss */
+/* line 364, app.scss */
 ul.forum-list {
   list-style: none; }
-  /* line 352, app.scss */
+  /* line 366, app.scss */
   ul.forum-list li {
     border-bottom: 1px solid #7c99e4;
     padding: 15px 5px;
     border-left: 4px solid #7c99e4;
     margin-top: 5px; }
-  /* line 358, app.scss */
+  /* line 372, app.scss */
   ul.forum-list .title {
     cursor: pointer;
     font-size: 1.1em;
