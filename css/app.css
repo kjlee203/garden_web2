@@ -62,7 +62,7 @@
 .chat-footer {
   text-align: right;
   padding-top: 10px;
-  border-top: 1px solid #eeeeee; }
+  border-top: 1px solid #eee; }
 
 /* line 65, app.scss */
 #mainCarousel {
@@ -147,7 +147,7 @@ ul.newsticker span {
   /* line 152, app.scss */
   #dayviewsTab .active > a, #dayviewsTab .active > a:hover, #dayviewsTab .active > a:focus {
     background: #ffa93c;
-    border: 1px solid #fdc987;
+    border: 1px solid #FDC987;
     border-bottom: 1px solid #ffa93c; }
 
 /* line 161, app.scss */
@@ -348,7 +348,7 @@ ul.newsticker span {
   padding-top: 10px; }
   /* line 310, app.scss */
   .meta-actions .meta-action {
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #ddd;
     line-height: 1.4em;
     padding: 12px; }
 
@@ -362,7 +362,7 @@ ul.newsticker span {
 
 /* line 325, app.scss */
 .sidebar ul.col-nav {
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #eee;
   padding: 5px 0; }
 
 /* line 329, app.scss */
@@ -380,7 +380,7 @@ ul.newsticker span {
       font-size: 1.3em; }
   /* line 350, app.scss */
   .info-list li.item:hover {
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid #eee;
     border-top: 2px solid #33aa33;
     padding: 10px 15px;
     background: #eee; }
@@ -397,23 +397,19 @@ ul.forum-list {
     border-bottom: 1px solid #7c99e4;
     padding: 0px 5px;
     margin-top: 5px; }
-<<<<<<< HEAD
-    /* line 357, app.scss */
+    /* line 371, app.scss */
     ul.forum-list li .item-body {
       margin-left: 65px; }
-      /* line 359, app.scss */
+      /* line 373, app.scss */
       ul.forum-list li .item-body .content {
         margin-right: 70px;
         height: 3em;
         overflow: hidden; }
-        /* line 363, app.scss */
+        /* line 377, app.scss */
         ul.forum-list li .item-body .content a {
           text-decoration: none;
           color: rgba(80, 72, 72, 0.8); }
-  /* line 370, app.scss */
-=======
-  /* line 372, app.scss */
->>>>>>> b89e0457e7e0660354b91708f2681f1843c2eec6
+  /* line 384, app.scss */
   ul.forum-list .title {
     cursor: pointer;
     font-size: 1.1em;
