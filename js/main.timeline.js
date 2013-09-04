@@ -1,7 +1,7 @@
 (function ($) {
   if (!!window.ActiveXObject && !window.XMLHttpRequest && (location.href=='http://www.lanrentuku.com' || location.href=='http://www.lanrentuku.com/')) return;
   $(function () {
-    nav();
+    //nav();
     bnrSilder();
     sideSlider();
     helpToggle();

@@ -1,21 +1,6 @@
-body, p, form, input, textarea, ul, li, h1, h2, h3, h4, dl, dt, dd, table, td, th { margin:0; padding:0; }
-table, td, th { border-collapse:collapse; }
-ul, li { list-style:none; }
-h1, h2, h3, h4 { font-size:100%; }
-img, input, textarea { vertical-align: middle; border:0; }
-a { text-decoration:none; color:#787878; outline:none; }
-a:hover { text-decoration:underline; }
-body { font:12px/1.5 "Œ¢»Ì—≈∫⁄","tahoma", Verdana, Geneva, sans-serif; color:#666; position:relative;}
-.clearfix:after{content:" "; display:block; height:0; clear:both; visibility:hidden;}
-.clearfix{zoom:1;}
-.fl { float:left;}
-.fr { float:right;}
-/*.public*/
-.main {margin:0 auto; width:980px;} 
 a { blr:expression(this.onFocus=this.blur()) } /*’Î∂‘ IE*/
 a { outline:none; } /*’Î∂‘firefoxµ»*/
 
-.main { padding:45px 0; min-height:720px; }
 /*history*/
 .history { background:url(../images/line04.gif) repeat-y 187px 0; overflow:hidden; position:relative;}
 .history-date { overflow:hidden;}
