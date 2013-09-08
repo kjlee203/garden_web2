@@ -2,11 +2,11 @@ a { blr:expression(this.onFocus=this.blur()) } /*’Î∂‘ IE*/
 a { outline:none; } /*’Î∂‘firefoxµ»*/
 
 /*history*/
-.history { background:url(../images/line04.gif) repeat-y 65px 0; overflow:hidden; position:relative;margin-top: 10px;}
+.history { background:url(../images/line04.gif) repeat-y 65px 0; overflow:hidden; position:relative;margin-top: 5px;}
 .history-date { overflow:hidden;}
-.history-date h2 { background:url(../images/icon06.gif) #fff no-repeat 36px 0; height:59px; font-size:1em; font-weight:normal;  margin-bottom:35px;  }
+.history-date h2 { background:url(../images/time.png) #fff no-repeat 42px 0; height:45px; font-size:1em; font-weight:normal;  margin-bottom:50px;  }
 .history-date h2.first { position:absolute; left:0; top:0; z-index:99;margin-top: 0;}
-.history-date h2 a { color:#00bbff; display:inline-block; *display:inline; zoom:1; background:url(../images/icon08.gif) no-repeat right 50%; padding-right:17px; margin:21px 97px 0 0;}
+.history-date h2 a { color:#00bbff; display:inline-block; *display:inline; zoom:1; background:url(../images/icon08.gif) no-repeat right 50%; padding-right:17px; margin:45px 97px 0 0;}
 .history-date h2 a:hover { text-decoration:none;}
 .history-date h2 img { vertical-align:-5px;}
 .history-date h2.date02 { background:none;}
