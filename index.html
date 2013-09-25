@@ -8,6 +8,13 @@
     <title>Garden校园通</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/bootstrap-responsive.css" />
+    <!--[if lte IE 6]>
+    <!-- bsie css 补丁文件 -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-ie6.min.css">
+
+    <!-- bsie 额外的 css 补丁文件 -->
+    <link rel="stylesheet" type="text/css" href="css/ie.css">
+    <![endif]-->
     <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" /> -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/toastr.css" />
@@ -713,4 +720,8 @@ socket.onmessage = function(msg) { msg.data == 'reload' && window.location.reloa
    
   </script>
   <script type="text/javascript" src="js/main.timeline.js"></script>
+  <!--[if lte IE 6]>
+  <!-- bsie js 补丁只在IE6中才执行 -->
+  <script type="text/javascript" src="js/bootstrap-ie.js"></script>
+  <![endif]-->
 </html>
