@@ -30,8 +30,12 @@
 /**index.html****/
 .chat-box{
 	padding:2px;
+	.header{
+		margin-bottom:10px;
+	}
 	.box-content{
 		list-style:none;
+		margin: 0 5px 5px 5px;
 		.box-item{
 			position:relative;
 			.avatar{
@@ -39,6 +43,12 @@
 				top: 0;
 				width: 32px;
 				height: 32px;
+				img {
+					border:2px solid #eee;
+					-webkit-border-radius: 999px;
+					-moz-border-radius: 999px;
+					border-radius: 999px;
+				}
 			}
 			.name{
 				margin-left: 45px;
@@ -47,19 +57,26 @@
 				position:absolute;
 				top: 0;
 				right: 0;
+				padding-right:10px;
 			}
 			p{
 				margin-left: 45px;
+				padding-bottom: 5px;
+				border-bottom: 1px solid #eee;
 			}
 
-		}
+		}		
 	}
+}
+#chat-box-body{
+	clear:both;
+	height:350px;
 }
 
 .chat-footer{
 	text-align: right;
-	padding-top: 10px;
-	border-top: 1px solid #eee;
+	padding-top: 15px;
+	//border-top: 1px solid #eee;
 	}
 
 #mainCarousel{
@@ -173,19 +190,19 @@ margin: 0 10px 0 0;
 
 /**scrollbar**/
 #events { clear: both;}
-#events .viewport { height: 100%; overflow: hidden; position: relative; }
-#events .overview { list-style: none; position: absolute; left: 0; top: 0; }*
-#events .thumb .end,
-#events .thumb { background-color: #005580; }
-#events .scrollbar { position: relative; float: right; width: 15px; }
-#events .track { background-color: #D8EEFD; height: 100%; width:8px; position: relative; padding: 0 1px;-webkit-border-radius: 5px;
+.viewport { height: 100%; overflow: hidden; position: relative; }
+.overview { list-style: none; position: absolute; left: 0; top: 0; }
+.thumb .end,
+.thumb { background-color: #005580; }
+.scrollbar { position: relative; float: right; /**width: 15px;**/ }
+.track { background-color: #D8EEFD; height: 100%; width:8px; position: relative; padding: 0 1px;-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px; }
-#events .thumb { height: 20px; width: 8px; cursor: pointer; overflow: hidden; position: absolute; top: 0;-webkit-border-radius: 5px;
+.thumb { height: 20px; width: 8px; cursor: pointer; overflow: hidden; position: absolute; top: 0;-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px; }
-#events .thumb .end { overflow: hidden; height: 5px; width: 8px; }
-#events .disable{ display: none; }
+.thumb .end { overflow: hidden; height: 5px; width: 8px; }
+.disable{ display: none; }
 .noSelect { user-select: none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }
 
 
