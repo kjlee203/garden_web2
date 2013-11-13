@@ -263,20 +263,39 @@ ul.newsticker span {
 #activity .form-horizontal .controls {
   margin-left: 120px; }
 
-/***photoviews.html****/
+/***meal image carousel***/
 /* line 221, app.scss */
+.image_carousel {
+  padding: 15px 0 15px 40px; }
+
+/* line 224, app.scss */
+.image_carousel img {
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 9px;
+  margin: 7px;
+  display: block;
+  float: left; }
+
+/* line 232, app.scss */
+.clearfix2 {
+  float: none;
+  clear: both; }
+
+/***photoviews.html****/
+/* line 239, app.scss */
 .photo-thumb {
   width: 23.5%;
   margin: 5px;
   background: pink; }
-  /* line 226, app.scss */
+  /* line 244, app.scss */
   .photo-thumb .text {
     padding: 5px 0 0 5px; }
 
-/* line 230, app.scss */
+/* line 248, app.scss */
 .tools {
   padding: 3px; }
-  /* line 232, app.scss */
+  /* line 250, app.scss */
   .tools a {
     margin: 0 0 0 12px;
     text-decoration: none;
@@ -285,15 +304,15 @@ ul.newsticker span {
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px; }
-    /* line 241, app.scss */
+    /* line 259, app.scss */
     .tools a:hover, .tools a:active {
       background: #fff; }
 
-/* line 246, app.scss */
+/* line 264, app.scss */
 .author {
   padding: 5px;
   border-top: 1px solid #cdcdcd; }
-  /* line 249, app.scss */
+  /* line 267, app.scss */
   .author .avatar {
     width: 32px;
     height: 32px;
@@ -303,7 +322,7 @@ ul.newsticker span {
     margin: 3px 0; }
 
 /**photo.html***/
-/* line 263, app.scss */
+/* line 281, app.scss */
 .distribute img {
   float: left;
   width: 60px;
@@ -312,37 +331,37 @@ ul.newsticker span {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px; }
-/* line 273, app.scss */
+/* line 291, app.scss */
 .distribute .info .name {
   font-weight: bolder;
   font-size: 1.1em; }
-/* line 277, app.scss */
+/* line 295, app.scss */
 .distribute .info .time {
   color: #000;
   margin: 2px 0 0 12px; }
 
-/* line 284, app.scss */
+/* line 302, app.scss */
 .photo-large {
   margin: 20px 0 0 0;
   background: #ccc;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px; }
-  /* line 290, app.scss */
+  /* line 308, app.scss */
   .photo-large img {
     padding: 20px; }
 
-/* line 294, app.scss */
+/* line 312, app.scss */
 .responses {
   margin: 5px; }
-  /* line 297, app.scss */
+  /* line 315, app.scss */
   .responses .comments-section ol {
     list-style: none; }
-  /* line 301, app.scss */
+  /* line 319, app.scss */
   .responses .comments-section .comments .comment {
     border-bottom: 1px solid #cdcdcd;
     padding: 15px 0; }
-    /* line 304, app.scss */
+    /* line 322, app.scss */
     .responses .comments-section .comments .comment .avatar {
       width: 32px;
       height: 32px;
@@ -351,81 +370,81 @@ ul.newsticker span {
       border-radius: 3px;
       float: left;
       margin-right: 15px; }
-    /* line 313, app.scss */
+    /* line 331, app.scss */
     .responses .comments-section .comments .comment p {
       margin-left: 47px;
       padding-top: 10px; }
-    /* line 317, app.scss */
+    /* line 335, app.scss */
     .responses .comments-section .comments .comment .time {
       margin-left: 47px; }
 
-/* line 325, app.scss */
+/* line 343, app.scss */
 .meta-actions {
   padding-top: 10px; }
-  /* line 327, app.scss */
+  /* line 345, app.scss */
   .meta-actions .meta-action {
     border-bottom: 1px solid #ddd;
     line-height: 1.4em;
     padding: 12px; }
 
 /***infoviews.html*****/
-/* line 336, app.scss */
+/* line 354, app.scss */
 .sidebar .col-nav li a {
   border-bottom: none; }
-  /* line 338, app.scss */
+  /* line 356, app.scss */
   .sidebar .col-nav li a .title {
     padding-left: 10px; }
 
-/* line 342, app.scss */
+/* line 360, app.scss */
 .sidebar ul.col-nav {
   border-bottom: 1px solid #eee;
   padding: 5px 0; }
 
-/* line 346, app.scss */
+/* line 364, app.scss */
 .info-list {
   list-style: none;
   margin: 0; }
-  /* line 350, app.scss */
+  /* line 368, app.scss */
   .info-list .item {
     border-bottom: 1px solid #eeeeee;
     padding: 10px 15px; }
-    /* line 354, app.scss */
+    /* line 372, app.scss */
     .info-list .item .title {
       margin: 0;
       color: blue;
       font-size: 1.3em; }
-  /* line 367, app.scss */
+  /* line 385, app.scss */
   .info-list li.item:hover {
     border-bottom: 1px solid #eee;
     border-top: 2px solid #33aa33;
     padding: 10px 15px;
     background: #eee; }
-    /* line 372, app.scss */
+    /* line 390, app.scss */
     .info-list li.item:hover a {
       text-decoration: none; }
 
 /***forumviews.html**********/
-/* line 381, app.scss */
+/* line 399, app.scss */
 ul.forum-list {
   list-style: none; }
-  /* line 383, app.scss */
+  /* line 401, app.scss */
   ul.forum-list li {
     border-bottom: 1px solid #7c99e4;
     padding: 0px 5px;
     margin-top: 5px; }
-    /* line 388, app.scss */
+    /* line 406, app.scss */
     ul.forum-list li .item-body {
       margin-left: 65px; }
-      /* line 390, app.scss */
+      /* line 408, app.scss */
       ul.forum-list li .item-body .content {
         margin-right: 70px;
         height: 3em;
         overflow: hidden; }
-        /* line 394, app.scss */
+        /* line 412, app.scss */
         ul.forum-list li .item-body .content a {
           text-decoration: none;
           color: rgba(80, 72, 72, 0.8); }
-  /* line 401, app.scss */
+  /* line 419, app.scss */
   ul.forum-list .title {
     cursor: pointer;
     font-size: 1.1em;

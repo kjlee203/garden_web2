@@ -217,6 +217,24 @@ margin: 0 10px 0 0;
 	margin-left:120px;
 }
 
+/***meal image carousel***/
+.image_carousel {
+	padding: 15px 0 15px 40px;
+}
+.image_carousel img {
+	border: 1px solid #ccc;
+	background-color: white;
+	padding: 9px;
+	margin: 7px;
+	display: block;
+	float: left;
+}
+.clearfix2 {
+	float: none;
+	clear: both;
+}
+
+
 /***photoviews.html****/
 .photo-thumb{
 	width:23.5%;
