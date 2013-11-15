@@ -52,7 +52,7 @@
         height: 32px; }
         /* line 46, app.scss */
         .chat-box .box-content .box-item .avatar img {
-          border: 2px solid #eee;
+          border: 2px solid #eeeeee;
           -webkit-border-radius: 999px;
           -moz-border-radius: 999px;
           border-radius: 999px; }
@@ -69,7 +69,7 @@
       .chat-box .box-content .box-item p {
         margin-left: 45px;
         padding-bottom: 5px;
-        border-bottom: 1px solid #eee; }
+        border-bottom: 1px solid #eeeeee; }
 
 /* line 71, app.scss */
 #chat-box-body {
@@ -164,7 +164,7 @@ ul.newsticker span {
   /* line 169, app.scss */
   #dayviewsTab .active > a, #dayviewsTab .active > a:hover, #dayviewsTab .active > a:focus {
     background: #ffa93c;
-    border: 1px solid #FDC987;
+    border: 1px solid #fdc987;
     border-bottom: 1px solid #ffa93c; }
 
 /* line 178, app.scss */
@@ -265,12 +265,12 @@ ul.newsticker span {
 
 /***meal image carousel***/
 /* line 221, app.scss */
-.image_carousel {
+.mealsWraper {
   padding: 15px 0 15px 40px; }
 
 /* line 224, app.scss */
-.image_carousel img {
-  border: 1px solid #ccc;
+.mealsWraper img {
+  border: 1px solid #cccccc;
   background-color: white;
   padding: 9px;
   margin: 7px;
@@ -383,7 +383,7 @@ ul.newsticker span {
   padding-top: 10px; }
   /* line 345, app.scss */
   .meta-actions .meta-action {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #dddddd;
     line-height: 1.4em;
     padding: 12px; }
 
@@ -397,7 +397,7 @@ ul.newsticker span {
 
 /* line 360, app.scss */
 .sidebar ul.col-nav {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #eeeeee;
   padding: 5px 0; }
 
 /* line 364, app.scss */
@@ -415,7 +415,7 @@ ul.newsticker span {
       font-size: 1.3em; }
   /* line 385, app.scss */
   .info-list li.item:hover {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #eeeeee;
     border-top: 2px solid #33aa33;
     padding: 10px 15px;
     background: #eee; }
