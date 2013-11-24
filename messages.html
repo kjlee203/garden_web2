@@ -5,15 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
     <meta name="description" content="description of your site" />
     <meta name="author" content="author of the site" />
-    <title>IndustryApp Template</title>
+    <title>Garden校园通</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/bootstrap-responsive.css" />
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" />
+    <!--[if lte IE 6]>
+    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-ie6.min.css">
+
+ 
+    <link rel="stylesheet" type="text/css" href="css/ie.css">
+    <![endif]-->
+    <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" /> -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/toastr.css" />
     <link rel="stylesheet" href="css/fullcalendar.css" />
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="css/history.css">
+    <link rel="stylesheet" type="text/css" href="css/image-style.css" />
+    <link rel="stylesheet" type="text/css" href="css/163css.css" />
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/modernizr.custom.26633.js"></script>
     <script src="js/jquery.knob.js"></script>
     <script src="js/d3.v3.min.js"></script>
     <script src="js/jquery.sparkline.min.js"></script>
@@ -21,8 +33,10 @@
     <script src="js/jquery.tablesorter.min.js"></script>
     <script src="js/jquery.peity.min.js"></script>
     <script src="js/fullcalendar.min.js"></script>
+    <script src="js/jquery.li-scroller.1.0.js"></script>
     <script src="js/gcal.js"></script>
     <script src="js/setup.js"></script>
+
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
   <body>
     <div id="in-nav">
@@ -30,12 +44,31 @@
         <div class="row">
           <div class="span12">
             <ul class="pull-right">
-              <li><a href="#">Link1</a></li>
-              <li><a href="#">Link2</a></li>
-              <li><a href="#">Link3</a></li>
-              <li><a href="login.html">Login</a></li>
-            </ul><a id="logo" href="index.html">
-              <h4>My<strong>Admin</strong></h4></a>
+              <li><a href="#">常见问题</a></li>
+              <li><a href="#">联系我们</a></li>
+              <li class="dropdown">
+                <a id="personal-menu" class="dropdown-toggle"  data-target="#" data-toggle="dropdown" href="#">
+                  <img class="img-rounded"src="img/photos/jane.png" width="36" height="36"></img>
+                  <span>张晓明<i class="caret"></i></span>
+                </a>
+                <ul class="dropdown-menu"  role="menu" aria-labelledby="personal-menu">
+                  <li>
+                    <a href="#">新消息</a>
+                  </li>
+                  <li>
+                    <a href="#">个人资料</a>
+                  </li>
+                  <li>
+                    <a href="#">密码修改</a>
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                    <a href="#">退出系统</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <a id="logo" href="index.html"><h4>My<strong>Admin</strong></h4></a>
           </div>
         </div>
       </div>
@@ -45,12 +78,12 @@
         <div class="row">
           <div class="span12">
             <ul>
-              <li><a href="index.html"><i class="batch home"></i><br />Dashboard</a></li>
-              <li><span class="label label-important pull-right">08</span><a href="stream.html"><i class="batch stream"></i><br />Stream</a></li>
-              <li><span class="label label-important pull-right">04</span><a href="messages.html" class="active"><i class="batch plane"></i><br />Messages</a></li>
-              <li><a href="calendar.html"><i class="batch calendar"></i><br />Calendar</a></li>
-              <li><a href="paragraphs.html"><i class="batch quill"></i><br />Paragraphs</a></li>
-              <li><a href="faq.html"><i class="batch forms"></i><br />FAQ</a></li>
+              <li><a href="index.html" class="active"><i class="batch home"></i><br />首页</a></li>
+              <li><span class="label label-important pull-right">08</span><a href="infoviews.html"><i class="batch stream"></i><br />校园资讯</a></li>
+              <li><span class="label label-important pull-right">04</span><a href="messages.html"><i class="batch plane"></i><br />短消息</a></li>
+              <li><a href="dayviews.html"><i class="batch calendar"></i><br />每日情况</a></li>
+              <li><a href="photoviews.html"><i class="batch quill"></i><br />感动一刻</a></li>
+              <li><a href="forumviews.html"><i class="batch forms"></i><br />建议交流</a></li>
               <li><a href="users.html"><i class="batch users"></i><br />Users</a></li>
               <li><a href="settings.html"><i class="batch settings"></i><br />Settings</a></li>
             </ul>
@@ -62,49 +95,63 @@
       <div class="page-container">
 <div class="container">
   <div class="row">
-    <div class="span12 header"><a href="#" class="btn pull-right">New Message </a>
-      <h4>Messages</h4>
+    <div class="span12 header"><a href="#" class="btn pull-right">新建消息</a>
+      <h4>短消息</h4>
     </div>
     <div class="span4">
-      <div class="message-sidebar"><a href="#" class="message-preview new">
-          <p class="pull-right">21 Wed</p>
-          <h4>Carly Rae</h4>
-          <h5 class="sub">Call me Maybe</h5>
-          <p>Hey, I just met you, and this is crazy, but here's my number and you should probably call me.</p></a><a href="#" class="message-preview active">
-          <p class="pull-right">21 Wed</p>
-          <h4>Nate Speller</h4>
-          <h5 class="sub">need a logo from logobro?</h5>
-          <p>If you're looking for a sweet logo, you should check out logobro.com. It's invite-only.</p></a><a href="#" class="message-preview new">
-          <p class="pull-right">21 Wed</p>
-          <h4>Two Chainz</h4>
-          <h5 class="sub">What a large behind</h5>
-          <p>She got a big booty so I call her big booty.</p></a><a href="#" class="message-preview new">
-          <p class="pull-right">21 Wed</p>
-          <h4>Carly Rae</h4>
-          <h5 class="sub">Call me Maybe</h5>
-          <p>Hey, I just met you, and this is crazy, but here's my number and you should probably call me.</p></a><a href="#" class="message-preview">
-          <p class="pull-right">21 Wed</p>
-          <h4>Nate Speller</h4>
-          <h5 class="sub">need a logo from logobro?</h5>
-          <p>If you're looking for a sweet logo, you should check out logobro.com. It's a community.</p></a><a href="#" class="message-preview">
-          <p class="pull-right">21 Wed</p>
-          <h4>Nate Speller</h4>
-          <h5 class="sub">need a logo from logobro?</h5>
-          <p>If you're looking for a sweet logo, you should check out logobro.com. It's a community.</p></a><a href="#" class="message-preview">
-          <p class="pull-right">21 Wed</p>
-          <h4>Two Chainz</h4>
-          <h5 class="sub">What a large behind</h5>
-          <p>She got a big booty so I call her big booty.</p></a>
-        <div class="load-more"><a href="#">Load More</a></div>
+      <div id="new-message">
+        <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+        <div class="viewport">
+          <div class="overview message-sidebar">
+            <a href="#" class="message-preview new">
+              <p class="pull-right">3分钟前</p>
+              <h4>张萌萌</h4>
+              <h5 class="sub">方便的时候电话我</h5>
+              <p>小花的手工画很漂亮，有时间学习下.</p>
+            </a>
+            <a href="#" class="message-preview active">
+              <p class="pull-right">5分钟前</p>
+              <h4>林俊杰</h4>
+              <h5 class="sub">需要买奶粉么?</h5>
+              <p>我进口了奶粉，你们需要么？我发给你.</p>
+            </a>
+            <a href="#" class="message-preview new">
+              <p class="pull-right">13分钟前</p>
+              <h4>Two Chainz</h4>
+              <h5 class="sub">What a large behind</h5>
+              <p>She got a big booty so I call her big booty.</p>
+            </a>
+            <a href="#" class="message-preview new">
+              <p class="pull-right">1小时前</p>
+              <h4>Carly Rae</h4>
+              <h5 class="sub">Call me Maybe</h5>
+              <p>Hey, I just met you, and this is crazy, but here's my number and you should probably call me.</p>
+            </a>
+            <a href="#" class="message-preview">
+              <p class="pull-right">21 Wed</p>
+              <h4>Nate Speller</h4>
+              <h5 class="sub">need a logo from logobro?</h5>
+              <p>If you're looking for a sweet logo, you should check out logobro.com. It's a community.</p></a><a href="#" class="message-preview">
+              <p class="pull-right">21 Wed</p>
+              <h4>Nate Speller</h4>
+              <h5 class="sub">need a logo from logobro?</h5>
+              <p>If you're looking for a sweet logo, you should check out logobro.com. It's a community.</p></a><a href="#" class="message-preview">
+              <p class="pull-right">21 Wed</p>
+              <h4>Two Chainz</h4>
+              <h5 class="sub">What a large behind</h5>
+              <p>She got a big booty so I call her big booty.</p></a>
+            <div class="load-more"><a href="#">Load More</a></div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="span8">
       <div class="messages">
-        <h4 class="header">Conversation With Nate Speller</h4>
-        <div class="message"><img src="img/jane.png" class="img-rounded pull-left" />
+        <h4 class="header">和林俊杰对话</h4>
+        <div class="message"><img src="img/photos/nate.png" class="img-rounded pull-left" />
           <div class="message-body">
             <p class="pull-right">19 Mon, 2012</p>
-            <h5>Jane Eyre</h5>
+            <h5>林俊杰</h5>
             <p>
               Nunc nec erat quam, et egestas nunc. Fusce bibendum tellus eget ante hendrerit 
               laoreet. Nulla id felis diam, in feugiat nisi. Nulla id nibh sit amet felis lobortis
@@ -114,10 +161,10 @@
             <p>Best,<br />Jane</p>
           </div>
         </div>
-        <div class="message"><img src="img/nate.png" class="img-rounded pull-left" />
+        <div class="message"><img src="img/photos/jane.png" class="img-rounded pull-left" />
           <div class="message-body">
             <p class="pull-right">19 Mon, 2012</p>
-            <h5>Nate Speller</h5>
+            <h5>张萌萌</h5>
             <p>
               Donec tempor posuere tortor sit amet consectetur. Quisque aliquam facilisis elit, 
               sed volutpat augue congue non. Proin quis orci diam. 
@@ -130,9 +177,9 @@
             </p>
           </div>
         </div>
-        <div class="message"><img src="img/jane.png" class="img-rounded pull-left" />
+        <div class="message"><img src="img/photos/jane.png" class="img-rounded pull-left" />
           <div class="message-body">
-            <textarea>Morbi sit amet massa sed felis accumsan convallis...</textarea><br /><a href="" class="btn">Send Message</a>
+            <textarea>我喜欢你，林俊杰..</textarea><br /><a href="" class="btn">发送短消息</a>
           </div>
         </div>
       </div>
@@ -153,5 +200,15 @@
     </footer>
   </body>
   <script src="js/d3-setup.js"></script><script>protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://'; address = protocol + window.location.host + window.location.pathname + '/ws'; socket = new WebSocket(address);
-socket.onmessage = function(msg) { msg.data == 'reload' && window.location.reload() }</script>
+socket.onmessage = function(msg) { msg.data == 'reload' && window.location.reload() }</script> 
+
+  <script src="js/jquery.tinyscrollbar.min.js"></script>
+  <script type="text/javascript">
+    
+        //scrollbar
+    $('#new-message').tinyscrollbar();
+    
+  </script>
+
+
 </html>

@@ -270,12 +270,49 @@
           <div class="alert alert-block alert-success"><strong>温馨提示：</strong>请到资料下载区下载视频课程资料。</div>
         </div>
         <div class="tab-pane" id="meals">
-            <ul class="bxslider">
-                <li><img src="img/photos/1_mid.jpg" width='120' height='80'></img></li>
-                <li><img src="img/photos/1_mid.jpg" width='120' height='80'></img></li>
-                <li><img src="img/photos/4_mid.jpg" width='120' height='80'></img></li>
-                <li><img src="img/photos/5_mid.jpg" width='120' height='80'></img></li>
-            </ul>
+          <div class="meals-well">
+            <div class="row-fluid">
+              <div class="carousel slide" id="mealsCarousel">
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <ul class="thumbnails">
+                      <li class="span3">
+                        <a class="thumbnail" href="#"><img src="img/photos/1_mid.jpg" height="80" alt=""></a>
+                      </li>
+                      <li class="span3">
+                        <div class="thumbnail"><img src="img/photos/5_mid.jpg" height="80" alt=""></div>
+                      </li>
+                      <li class="span3">
+                        <div class="thumbnail"><img src="img/photos/3_mid.jpg" height="80" alt=""></div>
+                      </li>
+                      <li class="span3">
+                        <div class="thumbnail"><img src="img/photos/4_mid.jpg" height="80" alt=""></div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="item">
+                    <ul class="thumbnails">
+                      <li class="span3">
+                        <div class="thumbnail"><img src="img/photos/1_mid.jpg" height="80" alt=""></div>
+                      </li>
+                      <li class="span3">
+                        <div class="thumbnail"><img src="img/photos/4_mid.jpg" height="80" alt=""></div>
+                      </li>
+                      <li class="span3">
+                        <div class="thumbnail"><img src="img/photos/3_mid.jpg" height="80" alt=""></div>
+                      </li>
+                      <li class="span3">
+                        <div class="thumbnail"><img src="img/photos/1_mid.jpg" height="80" alt=""></div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <a data-slide="prev" href="#mealsCarousel" class="left carousel-control">‹</a>
+                <a data-slide="next" href="#mealsCarousel" class="right carousel-control">›</a>
+              </div>
+            </div>     
+          </div>  
           <table class="table table-striped table-bordered">
             <thead><tr>
               <th>#</th>
@@ -333,11 +370,10 @@
   <script src="js/d3-setup.js"></script><script>protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://'; address = protocol + window.location.host + window.location.pathname + '/ws'; socket = new WebSocket(address);
 socket.onmessage = function(msg) { msg.data == 'reload' && window.location.reload() }</script>
 
-    <script src="js/jquery.tinyscrollbar.min.js"></script>
+  <script src="js/jquery.tinyscrollbar.min.js"></script>
   <script type="text/javascript">
-    $('.bxslider').bxSlider({minSlides: 2,
-  maxSlides: 2});
-     //scrollbar
+    $('.carousel').carousel();
+        //scrollbar
     $('#events').tinyscrollbar();
      //每日表现tab
     $('#dayviewsTab a').click(function (e) {
