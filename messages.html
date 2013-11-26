@@ -98,11 +98,11 @@
     <div class="span12 header"><a href="#" class="btn pull-right">新建消息</a>
       <h4>短消息</h4>
     </div>
-    <div class="span4">
-      <div id="new-message">
-        <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
-        <div class="viewport">
-          <div class="overview message-sidebar">
+    <div id="message2" class="span4">
+      <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+      <div class="viewport">
+        <div class="overview">
+      <div>
             <a href="#" class="message-preview new">
               <p class="pull-right">3分钟前</p>
               <h4>张萌萌</h4>
@@ -141,9 +141,9 @@
               <h5 class="sub">What a large behind</h5>
               <p>She got a big booty so I call her big booty.</p></a>
             <div class="load-more"><a href="#">Load More</a></div>
-          </div>
-        </div>
       </div>
+    </div>
+  </div>
     </div>
     <div class="span8">
       <div class="messages">
@@ -206,7 +206,7 @@ socket.onmessage = function(msg) { msg.data == 'reload' && window.location.reloa
   <script type="text/javascript">
     
         //scrollbar
-    $('#new-message').tinyscrollbar();
+   $('#message2').tinyscrollbar();
     
   </script>
 
