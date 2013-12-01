@@ -341,6 +341,7 @@ ul.stat-list {
 
 /* ============== panels ============== */
 .panel {
+  position: relative;
   background-color: #EEE;
   border-radius: 6px;
   text-align: center;

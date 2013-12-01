@@ -5,27 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
     <meta name="description" content="description of your site" />
     <meta name="author" content="author of the site" />
-    <title>Garden校园通</title>
+    <title>IndustryApp Template</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/bootstrap-responsive.css" />
-    <!--[if lte IE 6]>
-    
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-ie6.min.css">
-
- 
-    <link rel="stylesheet" type="text/css" href="css/ie.css">
-    <![endif]-->
-    <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" /> -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/toastr.css" />
     <link rel="stylesheet" href="css/fullcalendar.css" />
-    <link rel="stylesheet" type="text/css" href="css/app.css">
-    <link rel="stylesheet" type="text/css" href="css/history.css">
-    <link rel="stylesheet" type="text/css" href="css/image-style.css" />
-    <link rel="stylesheet" type="text/css" href="css/163css.css" />
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/modernizr.custom.26633.js"></script>
     <script src="js/jquery.knob.js"></script>
     <script src="js/d3.v3.min.js"></script>
     <script src="js/jquery.sparkline.min.js"></script>
@@ -33,10 +21,8 @@
     <script src="js/jquery.tablesorter.min.js"></script>
     <script src="js/jquery.peity.min.js"></script>
     <script src="js/fullcalendar.min.js"></script>
-    <script src="js/jquery.li-scroller.1.0.js"></script>
     <script src="js/gcal.js"></script>
     <script src="js/setup.js"></script>
-
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
   <body>
     <div id="in-nav">
@@ -44,31 +30,12 @@
         <div class="row">
           <div class="span12">
             <ul class="pull-right">
-              <li><a href="#">常见问题</a></li>
-              <li><a href="#">联系我们</a></li>
-              <li class="dropdown">
-                <a id="personal-menu" class="dropdown-toggle"  data-target="#" data-toggle="dropdown" href="#">
-                  <img class="img-rounded avatar"src="img/photos/jane.png" width="36" height="36"></img>
-                  <span>张晓明<i class="caret"></i></span>
-                </a>
-                <ul class="dropdown-menu"  role="menu" aria-labelledby="personal-menu">
-                  <li>
-                    <a href="#">新消息</a>
-                  </li>
-                  <li>
-                    <a href="#">个人资料</a>
-                  </li>
-                  <li>
-                    <a href="#">密码修改</a>
-                  </li>
-                  <li class="divider"></li>
-                  <li>
-                    <a href="#">退出系统</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <a id="logo" href="index.html"><h4>My<strong>Admin</strong></h4></a>
+              <li><a href="#">Link1</a></li>
+              <li><a href="#">Link2</a></li>
+              <li><a href="#">Link3</a></li>
+              <li><a href="login.html">Login</a></li>
+            </ul><a id="logo" href="index.html">
+              <h4>My<strong>Admin</strong></h4></a>
           </div>
         </div>
       </div>
@@ -78,14 +45,14 @@
         <div class="row">
           <div class="span12">
             <ul>
-              <li><a href="index.html"><i class="batch home"></i><br />首页</a></li>
-              <li><span class="label label-important pull-right">08</span><a href="infoviews.html"><i class="batch stream"></i><br />校园资讯</a></li>
-              <li><span class="label label-important pull-right">04</span><a href="messages.html"><i class="batch plane"></i><br />短消息</a></li>
-              <li><a href="dayviews.html"><i class="batch calendar"></i><br />每日情况</a></li>
-              <li><a href="photoviews.html"><i class="batch quill"></i><br />感动一刻</a></li>
-              <li><a href="forumviews.html"><i class="batch forms"></i><br />建议交流</a></li>
-              <li><a href="users.html" class="active"><i class="batch users"></i><br />通讯录</a></li>
-              <li><a href="settings.html"><i class="batch settings"></i><br />个人信息</a></li>
+              <li><a href="index.html"><i class="batch home"></i><br />Dashboard</a></li>
+              <li><span class="label label-important pull-right">08</span><a href="stream.html"><i class="batch stream"></i><br />Stream</a></li>
+              <li><span class="label label-important pull-right">04</span><a href="messages.html"><i class="batch plane"></i><br />Messages</a></li>
+              <li><a href="calendar.html"><i class="batch calendar"></i><br />Calendar</a></li>
+              <li><a href="paragraphs.html"><i class="batch quill"></i><br />Paragraphs</a></li>
+              <li><a href="faq.html"><i class="batch forms"></i><br />FAQ</a></li>
+              <li><a href="users.html" class="active"><i class="batch users"></i><br />Users</a></li>
+              <li><a href="settings.html"><i class="batch settings"></i><br />Settings</a></li>
             </ul>
           </div>
         </div>
@@ -95,16 +62,17 @@
       <div class="page-container">
 <div class="container">
   <div class="row">
-    <div class="span12"><a href="#newUserModal" data-toggle="modal" class="btn pull-right">添加新朋友</a>
-      <h4 class="header">通讯列表</h4>
+    <div class="span12"><a href="#newUserModal" data-toggle="modal" class="btn pull-right">New User</a>
+      <h4 class="header">Users</h4>
       <table class="table table-striped sortable">
         <thead>
           <tr>
-            <th>姓名</th>
-            <th>联系电话</th>
-            <th>家庭住址</th>
-            <th>生日</th>
-            <th>关系</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Username</th>
+            <th>Status</th>
+            <th>Date Joined</th>
           </tr>
         </thead>
         <tbody>
@@ -112,8 +80,9 @@
             <td>John</td>
             <td>Smith</td>
             <td>jsmith@yahoo.com</td>
+            <td>jsmith</td>
+            <td><span class="label label-success">Active</span></td>
             <td>2012-04-14</td>
-            <td><span class="label label-success">Active</span></td>            
             <td>
               <div class="btn-group">
                 <button class="btn">Approve</button>
@@ -128,8 +97,9 @@
             <td>Susan</td>
             <td>Mestas</td>
             <td>sm1268@gmail.com</td>
-            <td>2012-01-02</td>
+            <td>maestromestas</td>
             <td><span class="label">Inactive</span></td>
+            <td>2012-01-02</td>
             <td>
               <div class="btn-group">
                 <button class="btn">Approve</button>
@@ -144,8 +114,9 @@
             <td>Robert</td>
             <td>Jetton</td>
             <td>robbyjet@gmail.com</td>
+            <td>jetsetrob</td>
+            <td><span class="label label-inverse">Admin</span></td>
             <td>2011-11-12</td>
-            <td><span class="label label-inverse">Admin</span></td>            
             <td>
               <div class="btn-group">
                 <button class="btn">Approve</button>
@@ -160,8 +131,9 @@
             <td>Kristen</td>
             <td>Heck</td>
             <td>kheck12@aol.com</td>
+            <td>heckofathrow</td>
+            <td><span class="label label-important">Banned</span></td>
             <td>2012-05-11</td>
-            <td><span class="label label-important">Banned</span></td>            
             <td>
               <div class="btn-group">
                 <button class="btn">Approve</button>
@@ -176,8 +148,9 @@
             <td>Steve</td>
             <td>McMullan</td>
             <td>steveymac@yahoo.com</td>
-            <td>2010-07-11</td>
+            <td>orangeego</td>
             <td><span class="label label-inverse">Admin</span></td>
+            <td>2010-07-11</td>
             <td>
               <div class="btn-group">
                 <button class="btn">Approve</button>
@@ -192,9 +165,9 @@
             <td>Nicole</td>
             <td>Brown</td>
             <td>nikkybrown@aol.com</td>
-            <td>2012-12-04</td>
+            <td>nicolebrown</td>
             <td><span class="label label-success">Active</span></td>
-            
+            <td>2012-12-04</td>
             <td>
               <div class="btn-group">
                 <button class="btn">Approve</button>
@@ -209,9 +182,9 @@
             <td>Lynn</td>
             <td>West</td>
             <td>lynnawest@dayrep.com</td>
-            <td>2011-03-11</td>
+            <td>westlynn</td>
             <td><span class="label label-success">Active</span></td>
-            
+            <td>2011-03-11</td>
             <td>
               <div class="btn-group">
                 <button class="btn">Approve</button>
@@ -226,9 +199,9 @@
             <td>Debbie</td>
             <td>Fava</td>
             <td>dfava69@teleworm.us</td>
-            <td>2012-11-02</td>
+            <td>favadebs</td>
             <td><span class="label">Inactive</span></td>
-            
+            <td>2012-11-02</td>
             <td>
               <div class="btn-group">
                 <button class="btn">Approve</button>
@@ -243,9 +216,9 @@
             <td>Abby</td>
             <td>Zedler</td>
             <td>azed12@school.edu</td>
-            <td>2010-11-02</td>
+            <td>azeds</td>
             <td><span class="label">Inactive</span></td>
-            
+            <td>2010-11-02</td>
             <td>
               <div class="btn-group">
                 <button class="btn">Approve</button>
@@ -302,7 +275,7 @@
         <div class="row">
           <div class="span12">
             <p class="pull-right">Admin Theme by Nathan Speller</p>
-             <p>&copy; Copyright 2013 文忠科技有限公司</p>
+            <p>&copy; Copyright 2013 FreelanceLeague</p>
           </div>
         </div>
       </div>

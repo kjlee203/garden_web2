@@ -5,15 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
     <meta name="description" content="description of your site" />
     <meta name="author" content="author of the site" />
-    <title>IndustryApp Template</title>
+    <title>Garden校园通</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/bootstrap-responsive.css" />
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" />
+    <!--[if lte IE 6]>
+    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-ie6.min.css">
+
+ 
+    <link rel="stylesheet" type="text/css" href="css/ie.css">
+    <![endif]-->
+    <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" /> -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/toastr.css" />
     <link rel="stylesheet" href="css/fullcalendar.css" />
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="css/history.css">
+    <link rel="stylesheet" type="text/css" href="css/image-style.css" />
+    <link rel="stylesheet" type="text/css" href="css/163css.css" />
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/modernizr.custom.26633.js"></script>
     <script src="js/jquery.knob.js"></script>
     <script src="js/d3.v3.min.js"></script>
     <script src="js/jquery.sparkline.min.js"></script>
@@ -21,8 +33,10 @@
     <script src="js/jquery.tablesorter.min.js"></script>
     <script src="js/jquery.peity.min.js"></script>
     <script src="js/fullcalendar.min.js"></script>
+    <script src="js/jquery.li-scroller.1.0.js"></script>
     <script src="js/gcal.js"></script>
     <script src="js/setup.js"></script>
+
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
   <body>
     <div id="in-nav">
@@ -30,12 +44,31 @@
         <div class="row">
           <div class="span12">
             <ul class="pull-right">
-              <li><a href="#">Link1</a></li>
-              <li><a href="#">Link2</a></li>
-              <li><a href="#">Link3</a></li>
-              <li><a href="login.html">Login</a></li>
-            </ul><a id="logo" href="index.html">
-              <h4>My<strong>Admin</strong></h4></a>
+              <li><a href="#">常见问题</a></li>
+              <li><a href="#">联系我们</a></li>
+              <li class="dropdown">
+                <a id="personal-menu" class="dropdown-toggle"  data-target="#" data-toggle="dropdown" href="#">
+                  <img class="img-rounded"src="img/photos/jane.png" width="36" height="36"></img>
+                  <span>张晓明<i class="caret"></i></span>
+                </a>
+                <ul class="dropdown-menu"  role="menu" aria-labelledby="personal-menu">
+                  <li>
+                    <a href="#">新消息</a>
+                  </li>
+                  <li>
+                    <a href="#">个人资料</a>
+                  </li>
+                  <li>
+                    <a href="#">密码修改</a>
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                    <a href="#">退出系统</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <a id="logo" href="index.html"><h4>My<strong>Admin</strong></h4></a>
           </div>
         </div>
       </div>
@@ -45,14 +78,14 @@
         <div class="row">
           <div class="span12">
             <ul>
-              <li><a href="index.html"><i class="batch home"></i><br />Dashboard</a></li>
-              <li><span class="label label-important pull-right">08</span><a href="stream.html"><i class="batch stream"></i><br />Stream</a></li>
-              <li><span class="label label-important pull-right">04</span><a href="messages.html"><i class="batch plane"></i><br />Messages</a></li>
-              <li><a href="calendar.html"><i class="batch calendar"></i><br />Calendar</a></li>
-              <li><a href="paragraphs.html"><i class="batch quill"></i><br />Paragraphs</a></li>
-              <li><a href="faq.html"><i class="batch forms"></i><br />FAQ</a></li>
-              <li><a href="users.html"><i class="batch users"></i><br />Users</a></li>
-              <li><a href="settings.html" class="active"><i class="batch settings"></i><br />Settings</a></li>
+              <li><a href="index.html"><i class="batch home"></i><br />首页</a></li>
+              <li><span class="label label-important pull-right">08</span><a href="infoviews.html"><i class="batch stream"></i><br />校园资讯</a></li>
+              <li><span class="label label-important pull-right">04</span><a href="messages.html"><i class="batch plane"></i><br />短消息</a></li>
+              <li><a href="dayviews.html"><i class="batch calendar"></i><br />每日情况</a></li>
+              <li><a href="photoviews.html"><i class="batch quill"></i><br />感动一刻</a></li>
+              <li><a href="forumviews.html"><i class="batch forms"></i><br />建议交流</a></li>
+              <li><a href="users.html"><i class="batch users"></i><br />通讯录</a></li>
+              <li><a href="settings.html" class="active"><i class="batch settings"></i><br />个人信息</a></li>
             </ul>
           </div>
         </div>
@@ -62,158 +95,394 @@
       <div class="page-container">
 <div class="container">
   <div class="row">
-    <div class="span12 header">
-      <h4>Settings</h4>
-    </div>
-    <div class="span6">
-      <form class="form-horizontal" />
-        <div class="control-group">
-          <label for="inputEmail" class="control-label">Email </label>
-          <div class="controls">
-            <input id="inputEmail" type="text" placeholder="Email" />
-          </div>
-        </div>
-        <div class="control-group">
-          <label for="inputCurrentPassword" class="control-label">Current Password </label>
-          <div class="controls">
-            <input id="inputCurrentPassword" type="password" placeholder="Current Password" />
-          </div>
-        </div>
-        <div class="control-group">
-          <label for="inputPassword" class="control-label">Password </label>
-          <div class="controls">
-            <input id="inputPassword" type="password" placeholder="Password" />
-          </div>
-        </div>
-        <div class="control-group">
-          <label for="inputPasswordAgain" class="control-label">Password Again</label>
-          <div class="controls">
-            <input id="inputPasswordAgain" type="password" placeholder="Password Again" />
-          </div>
-        </div>
-        <div class="control-group"> 
-          <div class="controls">
-            <button type="submit" class="btn">Save Changes</button>
-          </div>
-        </div>
-      </form>
-    </div>
-    <div class="span6">
-      <p>If you want to change your email or password please remember to do these three things.</p>
+    <div class="span12">
+      <ul class="nav nav-tabs" id="personalTab">
+        <li class="active"><a href="#selfInfo">个人资料</a></li>
+        <li><a href="#birthdayCard">生日卡</a></li>
+      </ul>
+       
+      <div class="tab-content">
+        <div class="tab-pane active" id="selfInfo">
+          <div class="row-fluid">
+            <div class="span3">
+              <h4>个人大事记</h4>
+              <div class="history">
+    <div class="history-date">
       <ul>
-        <li>The first thing you should do is this</li>
-        <li>The second thing is probably this</li>
-        <li>There isn't actually a third thing</li>
+        <h2 class="first"><a href="#nogo">2012年</a></h2>
+
+ 
+         <li class="green">
+          <h3>10.08<span>2012</span></h3>
+          <dl>
+            <dt>发布全新的极速浏览器6.0版本
+  <span>升级极速内核到21.0；全新默认界面；新增小窗口播放功能</span>
+  </dt>
+          </dl>
+        </li>
+
+       <li>
+         <h3>07.19<span>2012</span></h3>
+          <dl>
+            <dt>升级极速内核到20.0
+  <span>HTML5支持度全球最好，达到469分，测试页面： </span>
+  </dt>
+          </dl>
+        </li>
+
+         <li>
+          <h3>07.02<span>2012</span></h3>
+          <dl>
+            <dt>升级极速内核到19.0
+  <span>支持网络摄像头，浏览器可直接访问摄像头</span>
+  </dt>
+          </dl>
+        </li>
+
+       <li class="green">
+          <h3>06.27<span>2012</span></h3>
+          <dl>
+            <dt>发布国内首个HTML5实验室
+  <span>大力推广HTML5</span>
+  </dt>
+          </dl>
+        </li>
+        <li>
+          <h3>06.15<span>2012</span></h3>
+          <dl>
+            <dt>新增了下载文件前扫描下载链接安全性的功能</dt>
+          </dl>
+        </li>
+        <li>
+          <h3>06.05<span>2012</span></h3>
+          <dl>
+            <dt>W3C联盟首席执行官访华，首站访问360公司
+  </dt>
+          </dl>
+        </li>
+        <li>
+          <h3>05.12<span>2012</span></h3>
+          <dl>
+            <dt>360受邀出席W3C联盟成员见面会议</dt>
+          </dl>
+        </li>
+        <li>
+          <h3>05.11<span>2012</span></h3>
+          <dl>
+            <dt>升级极速内核到18.0
+  <span>新增多用户使用浏览器的功能</span>
+  </dt>
+          </dl>
+        </li>
+        <li>
+          <h3>05.03<span>2012</span></h3>
+          <dl>
+            <dt>360极速浏览器用户数突破5000万，活跃用户超2000万
+  </dt>
+          </dl>
+        </li>
+        <li>
+          <h3>03.08<span>2012</span></h3>
+          <dl>
+            <dt>升级极速内核到17.0，提升浏览器速度、增强安全性
+  <span>新增HTTP管线化技术，大幅提升网页加载速度</span>
+  </dt>
+          </dl>
+        </li>
+        <li>
+          <h3>01.29<span>2012</span></h3>
+          <dl>
+            <dt>国内率先加入W3C联盟HTML工作组，参与HTML5标准制定</span>
+  </dt>
+          </dl>
+        </li>
       </ul>
     </div>
-    <div class="span12 settings-group">
-      <h4 class="header">Profile</h4>
+    <div class="history-date">
+      <ul>
+        <h2 class="date02"><a href="#nogo">2011年</a></h2>
+        <li>
+          <h3>12.12<span>2011</span></h3>
+          <dl>
+            <dt>升级极速内核到16.0，提升浏览器速度、增强安全性
+  <span>新增对360网购保镖支持，保护网上交易安全</span>
+  </dt>
+          </dl>
+        </li>
+        <li class="green">
+          <h3>11.24<span>2011</span></h3>
+          <dl>
+            <dt>发布国内首个双核浏览器实验室
+  <span>轻松测试浏览器性能</span>
+  </dt>
+          </dl>
+        </li>
+        <li>
+          <h3>11.01<span>2011</span></h3>
+          <dl>
+            <dt>升级极速内核到15.0
+  <span>提升浏览器速度、增强安全性</span>
+  </dt>
+          </dl>
+        </li>
+         <li>
+          <h3>10.27<span>2011</span></h3>
+          <dl>
+            <dt>作为国内唯一受邀参展的浏览器厂商，参展2011谷歌开发者日大会
+  </dt>
+          </dl>
+        </li>
+        <li>
+          <h3>09.22<span>2011</span></h3>
+          <dl>
+            <dt>升级极速内核到14.0
+  <span>加入Canvas 2D的GPU加速等特性</span>
+  </dt>
+          </dl>
+        </li>
+        <li>
+          <h3>09.21<span>2011</span></h3>
+          <dl>
+            <dt>360极速浏览器用户量超千万，宣布与Chromium社区版本同步
+  </dt>
+          </dl>
+        </li>
+        <li>
+          <h3>08.30<span>2011</span></h3>
+          <dl>
+            <dt>升级极速内核到13.0
+  <span>新增更丰富的皮肤自定义支持</span>
+  </dt>
+          </dl>
+        </li>
+        <li>
+          <h3>06.22<span>2011</span></h3>
+          <dl>
+            <dt>新增对crx格式的关联
+  <span>双击crx文件即可安装扩展、皮肤</span>
+  </dt>
+          </dl>
+        </li>
+        <li>
+          <h3>05.19<span>2011</span></h3>
+          <dl>
+            <dt>升级极速内核到10.0
+  <span>极速浏览器与安全浏览器网络收藏夹互通</span>
+  </dt>
+          </dl>
+        </li>
+        <li>
+          <h3>04.07<span>2011</span></h3>
+          <dl>
+            <dt>推出应用开放平台，与开发者共享用户资源
+  </dt>
+          </dl>
+        </li>
+       <li>
+          <h3>03.27<span>2011</span></h3>
+          <dl>
+            <dt>新增360云安全网址拦截
+  <span>新增IE9高速模式，支持GPU硬件加速</span>
+  </dt>
+          </dl>
+        </li>
+      </ul>
     </div>
-    <div class="span6">
-      <form class="form-horizontal" />
-        <div class="control-group">
-          <label for="username" class="control-label">Username</label>
-          <div class="controls">
-            <input id="username" type="text" placeholder="Username" />
-          </div>
-        </div>
-        <div class="control-group">
-          <label for="bio" class="control-label">Bio</label>
-          <div class="controls">
-            <textarea id="bio"></textarea>
-          </div>
-        </div>
-        <div class="control-group">
-          <label for="desc" class="control-label">Description</label>
-          <div class="controls">
-            <textarea id="desc"></textarea>
-          </div>
-        </div>
-        <div class="control-group">
-          <label for="admincode" class="control-label">Admin Code</label>
-          <div class="controls">
-            <input id="admincode" type="text" placeholder="xxxxx" />
-          </div>
-        </div>
-        <div class="control-group">
-          <label for="phone" class="control-label">Phone</label>
-          <div class="controls">
-            <input id="phone" type="text" placeholder="(xxx)-xxx-xxxx" />
-          </div>
-        </div>
-        <div class="control-group"> 
-          <div class="controls">
-            <button type="submit" class="btn">Save Changes</button>
-          </div>
-        </div>
-      </form>
+    <div class="history-date">
+      <ul>
+        <h2 class="date02"><a href="#nogo">2010年</a></h2>
+        <li>
+          <h3>12.13<span>2010</span></h3>
+          <dl>
+            <dt>升级极速内核到7.0<span>提升浏览器速度、增强安全性</span></dt>
+          </dl>
+        </li>
+        <li>
+          <h3>10.20<span>2010</span></h3>
+          <dl>
+            <dt>升级极速内核到6.0<span>新增360帐户，同步网络收藏夹</span></dt>
+          </dl>
+        </li>
+        <li>
+          <h3>09.15<span>2010</span></h3>
+          <dl>
+            <dt>首款双核安全浏览器 - 360极速浏览器发布
+  <span>首个包含沙箱、系统级防注入、完整多进程隔离架构等安全机制的双核浏览器</span>
+       </dt>
+          </dl>
+        </li>
+        <li>
+          <h3>09.15<span>2010</span></h3>
+          <dl>
+            <dt>首款双核安全浏览器 - 360极速浏览器发布
+  <span>首个包含沙箱、系统级防注入、完整多进程隔离架构等安全机制的双核浏览器</span></dt>
+          </dl>
+        </li>
+      </ul>
     </div>
-    <div class="span6">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque suscipit lobortis 
-        eros, quis convallis diam laoreet sit amet. Duis dapibus lacinia ornare. Class aptent 
-        taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-      </p>
-    </div>
-    <div class="span12 settings-group">
-      <h4 class="header">Other Accounts</h4>
-    </div>
-    <div class="span6">
-      <form class="form-horizontal" />
-        <div class="control-group">
-          <label for="ga" class="control-label">Google Analytics</label>
-          <div class="controls">
-            <input id="ga" type="text" placeholder="xxxxxxxxxxx" />
+  </div>
+            </div>
+            <div class="span9">
+              <div class="row-fluid">
+                <div class="span4">
+                  <div class="big-photos">
+                    <img src="images/medium/10.jpg" class="avatar-large" width:="180px" 
+height="180px"></img>
+                  </div>                  
+                </div>
+                <div class="span8">
+                  <form class="form-horizontal">
+                    <div class="control-group">
+                      <label class="control-label" for="inputEmail">姓名</label>
+                      <div class="controls">
+                        <input type="text" id="inputEmail" placeholder="Email">
+                      </div>
+                    </div>
+                    <div class="control-group">
+                      <label class="control-label" for="inputPassword">生日</label>
+                      <div class="controls">
+                        <input type="password" id="inputPassword" placeholder="Password">
+                      </div>
+                    </div>
+                    <div class="control-group">
+                      <label class="control-label" for="inputEmail">联系电话</label>
+                      <div class="controls">
+                        <input type="text" id="inputEmail" placeholder="Email">
+                      </div>
+                    </div>
+                    <div class="control-group">
+                      <label class="control-label" for="inputPassword">家庭地址</label>
+                      <div class="controls">
+                        <input type="password" id="inputPassword" placeholder="Password">
+                      </div>
+                    </div>                    
+                  </form>
+                </div>
+              </div>
+              <div class="row-fluid">
+                <div class="span12">
+                  <h4>今日说说</h4>
+                  <div class="day-words"></div>
+                </div>
+              </div>
+              <div class="row-fluid">
+                <div class="span12">
+                  <h4>今日动态</h4>
+                  <div class="day-activity">
+                    <table class="table">                    
+                      <tbody>
+                        <tr class="success">
+                          <td>相片：</td>
+                          <td>35</td>
+                        </tr>
+                        <tr class="warning">
+                          <td>留言：</td>
+                          <td>35</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="row-fluid">
+                <div class="span12">
+                  <h4>今日星星</h4>
+                </div>
+              </div>
+              <div class="row-fluid">
+                <div class="span12">
+                  <h4>个人相册</h4>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="control-group">
-          <label for="twitter" class="control-label">Twitter </label>
-          <div class="controls">
-            <input id="twitter" type="text" placeholder="freelanceleague" />
+        <div class="tab-pane" id="birthdayCard">
+          <div class="row-fluid">
+            <div class="span3">
+              <h4>生日感言</h4>
+              <div class="well">今天生日啦，我要吃大餐去，越小朋友做些惊呆的事情！</div>
+              <div class="wish-status well">
+                <div class="flower-block">
+                  <i class='icon-bubbles'></i>356
+                  <button class='btn btn-primary pull-right'>+1送花</button>
+                </div>
+                <div class="twitter-block">
+                  <i class='icon-bubbles'></i>356
+                </div>
+              </div>
+              <div class="wish-word">
+
+                <form>
+                    <div class="control-group">
+                      <div class="controls">
+                        <textarea class="input-block-level" rows="5"id="wishWord" placeholder="祝福说说"></textarea>
+                      </div>
+                    </div>
+                    <div class="control-group">
+                      <div class="controls">
+                        <button type="submit" class="btn btn-info pull-right">送去祝福！</button>
+                        <div class="clearfix"></div>
+                      </div>
+                    </div>             
+                </form>
+              </div>
+            </div>
+            <div class="span9">
+              <div class="btn-group pull-right">
+                <button class="btn"> <i class="icon-refresh"></i></button>
+                <button data-toggle="dropdown" class="btn dropdown-toggle"><span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">2013年</a></li>
+                  <li><a href="#">2012年</a></li>
+                  <li><a href="#">2011年</a></li>
+                </ul>
+              </div>
+              <h4>祝福树</h4>
+              <div id="container">
+                <div class="timeline_container">
+                    <div class="timeline">
+                        <div class="plus"></div>
+                    </div>
+                </div>
+                <div class="item">
+                  <a href='#' class='deletebox'>X</a>
+                  <div class="inner">Block Content</div>
+                </div>
+                <div class="item">
+                  <a href='#' class='deletebox'>X</a>
+                  <div class="inner">Block Content</div>
+                </div>
+                <div class="item">
+                  <a href='#' class='deletebox'>X</a>
+                  <div class="inner">Block Content</div>
+                </div>
+                <div class="item">
+                  <a href='#' class='deletebox'>X</a>
+                  <div class="inner">Block Content</div>
+                </div>
+                <div class="item">
+                  <a href='#' class='deletebox'>X</a>
+                  <div class="inner">Block Content</div>
+                </div>
+                <div class="item">
+                  <a href='#' class='deletebox'>X</a>
+                  <div class="inner">Block Content</div>
+                </div>
+                <div id="popup" class='shade'>      
+                  <div class="Popup_rightCorner" ></div>
+                  <div id='box'>
+                    <b>What's Up?</b><br/>
+                    <textarea id='update'></textarea>
+                    <input type='submit' value=' Update ' id='update_button'/>
+                  </div>                
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
-        <div class="control-group">
-          <label for="facebook" class="control-label">Facebook</label>
-          <div class="controls">
-            <input id="facebook" type="text" placeholder="freelanceleague" />
-          </div>
-        </div>
-        <div class="control-group">
-          <label for="gp" class="control-label">Google+</label>
-          <div class="controls">
-            <input id="gp" type="text" placeholder="freelanceleague" />
-          </div>
-        </div>
-        <div class="control-group">
-          <label for="pinterest" class="control-label">Pinterest </label>
-          <div class="controls">
-            <input id="pinterest" type="text" />
-          </div>
-        </div>
-        <div class="control-group">
-          <label for="dribbble" class="control-label">Dribbble</label>
-          <div class="controls">
-            <input id="dribbble" type="text" />
-          </div>
-        </div>
-        <div class="control-group"> 
-          <div class="controls">
-            <button type="submit" class="btn">Save Changes</button>
-          </div>
-        </div>
-      </form>
-    </div>
-    <div class="span6">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque suscipit lobortis 
-        eros, quis convallis diam laoreet sit amet. Duis dapibus lacinia ornare. Class aptent 
-        taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque suscipit lobortis 
-        eros, quis convallis diam laoreet sit amet. Duis dapibus lacinia ornare. Class aptent 
-        taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-      </p>
+      </div>
     </div>
   </div>
 </div>
@@ -232,4 +501,116 @@
   </body>
   <script src="js/d3-setup.js"></script><script>protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://'; address = protocol + window.location.host + window.location.pathname + '/ws'; socket = new WebSocket(address);
 socket.onmessage = function(msg) { msg.data == 'reload' && window.location.reload() }</script>
+    <script type="text/javascript">
+     //tab
+    $('#personalTab a').click(function (e) {
+      e.preventDefault();
+      $(this).tab('show');
+    });
+  </script>
+  <!--wish tree-->
+  <script type="text/javascript" src="js/main.timeline.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+
+<script>
+$(function(){
+
+
+function Arrow_Points()
+{ 
+var s = $('#container').find('.item');
+$.each(s,function(i,obj){
+var posLeft = $(obj).css("left");
+$(obj).addClass('borderclass');
+if(posLeft == "0px")
+{
+html = "<span class='rightCorner'></span>";
+$(obj).prepend(html);     
+}
+else
+{
+html = "<span class='leftCorner'></span>";
+$(obj).prepend(html);
+}
+});
+}
+
+$('.timeline_container').mousemove(function(e)
+{
+var topdiv=$("#containertop").height();
+var pag= e.pageY - topdiv-26;
+$('.plus').css({"top":pag +"px", "background":"url('images/plus.png')","margin-left":"1px"});}).
+mouseout(function()
+{
+$('.plus').css({"background":"url('')"});
+});
+  
+  
+        
+$("#update_button").live('click',function()
+{
+var x=$("#update").val();
+$("#container").prepend('<div class="item"><a href="#" class="deletebox">X</a><div>'+x+'</div></div>');
+
+//Reload masonry
+$('#container').masonry( 'reload' );
+
+$('.rightCorner').hide();
+$('.leftCorner').hide();
+Arrow_Points();
+
+$("#update").val('');
+$("#popup").hide();
+return false;
+});
+
+// Divs
+$('#container').masonry({itemSelector : '.item',});
+Arrow_Points();
+  
+//Mouseup textarea false
+$("#popup").mouseup(function() 
+{
+return false
+});
+  
+$(".timeline_container").click(function(e)
+{
+var topdiv=$("#containertop").height();
+$("#popup").css({'top':(e.pageY-topdiv-33)+'px'});
+$("#popup").fadeIn();
+$("#update").focus();
+
+  
+});  
+
+
+$(".deletebox").live('click',function()
+{
+if(confirm("Are your sure?"))
+{
+$(this).parent().fadeOut('slow');  
+//Remove item
+$('#container').masonry( 'remove', $(this).parent() );
+//Reload masonry
+$('#container').masonry( 'reload' );
+$('.rightCorner').hide();
+$('.leftCorner').hide();
+Arrow_Points();
+}
+return false;
+});
+
+
+
+//Textarea without editing.
+$(document).mouseup(function()
+{
+$('#popup').hide();
+
+});
+ 
+  
+});
+</script>
 </html>
