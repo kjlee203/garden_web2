@@ -22,7 +22,7 @@
     <link rel="stylesheet" type="text/css" href="css/app.css">
     <link rel="stylesheet" type="text/css" href="css/history.css">
     <link rel="stylesheet" type="text/css" href="css/image-style.css" />
-    <link rel="stylesheet" type="text/css" href="css/163css.css" />
+    <link rel="stylesheet" type="text/css" href="css/perfect-scrollbar.css" />
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/modernizr.custom.26633.js"></script>
@@ -78,9 +78,9 @@
         <div class="row">
           <div class="span12">
             <ul>
-              <li><a href="index.html" class="active"><i class="batch home"></i><br />首页</a></li>
+              <li><a href="index.html"><i class="batch home"></i><br />首页</a></li>
               <li><span class="label label-important pull-right">08</span><a href="infoviews.html"><i class="batch stream"></i><br />校园资讯</a></li>
-              <li><span class="label label-important pull-right">04</span><a href="messages.html"><i class="batch plane"></i><br />短消息</a></li>
+              <li><span class="label label-important pull-right">04</span><a href="messages.html" class="active"><i class="batch plane"></i><br />短消息</a></li>
               <li><a href="dayviews.html"><i class="batch calendar"></i><br />每日情况</a></li>
               <li><a href="photoviews.html"><i class="batch quill"></i><br />感动一刻</a></li>
               <li><a href="forumviews.html"><i class="batch forms"></i><br />建议交流</a></li>
@@ -189,13 +189,10 @@
   <script src="js/d3-setup.js"></script><script>protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://'; address = protocol + window.location.host + window.location.pathname + '/ws'; socket = new WebSocket(address);
 socket.onmessage = function(msg) { msg.data == 'reload' && window.location.reload() }</script> 
 
-  <script src="js/jquery.slimscroll.min.js"></script>
+  <script src="js/perfect-scrollbar-0.4.6.with-mousewheel.min.js"></script>
   <script type="text/javascript">
         //scrollbar
-    $('#messages-list').slimScroll({
-      height:'700px',
-      size:'5px'
-    });
+    $('#messages-list').perfectScrollbar();
     
   </script>
 

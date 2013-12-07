@@ -102,6 +102,11 @@
 	clear:both;
 	height:350px;
 }
+#chat-box-content{
+	height:350px;
+	position:relative;
+	overflow:hidden;
+}
 
 .chat-footer{
 	text-align: right;
@@ -117,7 +122,7 @@
 	border-radius: 5px;
 	.item{
 		img{
-			width: auto;
+			width: 100%;
 			height: 300px;
 			max-height: 300px;
 			-webkit-border-radius: 5px;
@@ -298,8 +303,8 @@ margin: 0 10px 0 0;
 /**** end of new topic wall****/
 
 /****messages.html*****/
-#message2{
-	clear:both;
+#messages-list{
+	position: relative; 
 }
 
 /**dayviews.html****/
@@ -331,22 +336,7 @@ margin: 0 10px 0 0;
 }
 
 /**scrollbar**/
-#events { clear: both;}
-.viewport { height: 100%; overflow: hidden; position: relative; }
-.overview { list-style: none; position: absolute; left: 0; top: 0; }
-.thumb .end,
-.thumb { background-color: #005580; }
-.scrollbar { position: relative; float: right; /**width: 15px;**/ }
-.track { background-color: #D8EEFD; height: 100%; width:8px; position: relative; padding: 0 1px;-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px; }
-.thumb { height: 20px; width: 8px; cursor: pointer; overflow: hidden; position: absolute; top: 0;-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px; }
-.thumb .end { overflow: hidden; height: 5px; width: 8px; }
-.disable{ display: none; }
-.noSelect { user-select: none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }
-
+#events { overflow: hidden; position: relative;}
 
 /**teacher-comment***/
 .meals-well{

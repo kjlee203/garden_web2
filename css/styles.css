@@ -199,7 +199,7 @@ footer {
 
 @media (min-width: 768px) {
   .message-sidebar {
-    overflow: auto;
+    overflow: hidden;
     height: 700px; } }
 .messages h4 {
   text-transform: none;

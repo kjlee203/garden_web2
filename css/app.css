@@ -103,46 +103,52 @@
   clear: both;
   height: 350px; }
 
-/* line 106, app.scss */
+/* line 105, app.scss */
+#chat-box-content {
+  height: 350px;
+  position: relative;
+  overflow: hidden; }
+
+/* line 111, app.scss */
 .chat-footer {
   text-align: right;
   padding-top: 15px; }
 
-/* line 112, app.scss */
+/* line 117, app.scss */
 #mainCarousel {
   margin: 0 auto;
   background: #eee;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px; }
-  /* line 119, app.scss */
+  /* line 124, app.scss */
   #mainCarousel .item img {
-    width: auto;
+    width: 100%;
     height: 300px;
     max-height: 300px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px; }
 
-/* line 130, app.scss */
+/* line 135, app.scss */
 .scroll-news {
   margin: 15px 0; }
 
 /* liScroll styles */
-/* line 136, app.scss */
+/* line 141, app.scss */
 .tickercontainer {
   /* the outer div with the black border */
   margin: 0;
   padding: 0;
   padding-left: 100px; }
 
-/* line 146, app.scss */
+/* line 151, app.scss */
 .tickercontainer .mask {
   /* that serves as a mask. so you get a sort of padding both left and right */
   position: relative;
   overflow: hidden; }
 
-/* line 153, app.scss */
+/* line 158, app.scss */
 ul.newsticker {
   /* that's your list */
   position: relative;
@@ -150,25 +156,25 @@ ul.newsticker {
   margin: 0;
   padding: 0; }
 
-/* line 162, app.scss */
+/* line 167, app.scss */
 ul.newsticker li {
   float: left;
   /* important: display inline gives incorrect results when you check for elem's width */
   margin: 0;
   padding: 0; }
 
-/* line 168, app.scss */
+/* line 173, app.scss */
 ul.newsticker a {
   white-space: nowrap;
   padding: 0;
   color: #ff0000;
   margin: 0 50px 0 0; }
 
-/* line 175, app.scss */
+/* line 180, app.scss */
 ul.newsticker span {
   margin: 0 10px 0 0; }
 
-/* line 179, app.scss */
+/* line 184, app.scss */
 .person-avatar {
   width: 32px;
   height: 32px;
@@ -176,22 +182,22 @@ ul.newsticker span {
   -moz-border-radius: 2px;
   border-radius: 2px; }
 
-/* line 187, app.scss */
+/* line 192, app.scss */
 .badge-red-dark {
   position: absolute;
   top: 0;
   left: 0; }
 
-/* line 195, app.scss */
+/* line 200, app.scss */
 #birth-week td {
   vertical-align: middle; }
-  /* line 197, app.scss */
+  /* line 202, app.scss */
   #birth-week td img {
     width: 36px;
     height: 36px;
     border-radius: 150px; }
 
-/* line 207, app.scss */
+/* line 212, app.scss */
 #day-star img {
   float: left;
   border-radius: 8px;
@@ -199,24 +205,24 @@ ul.newsticker span {
   left: 8px;
   top: 2px;
   z-index: 999; }
-/* line 215, app.scss */
+/* line 220, app.scss */
 #day-star .name {
   position: relative;
   top: 12px;
   font-size: 1.2em;
   font-weight: 700; }
-/* line 221, app.scss */
+/* line 226, app.scss */
 #day-star .team {
   position: relative;
   top: 15px;
   font-size: 1.2em;
   font-weight: 700; }
-/* line 227, app.scss */
+/* line 232, app.scss */
 #day-star .star {
   clear: both;
   padding-top: 10px; }
 
-/* line 232, app.scss */
+/* line 237, app.scss */
 .caption {
   display: none;
   position: absolute;
@@ -229,12 +235,12 @@ ul.newsticker span {
   border-radius: 0 0 5px 5px;
   text-align: center;
   margin: 0 auto; }
-  /* line 244, app.scss */
+  /* line 249, app.scss */
   .caption a {
     margin-top: 20%; }
 
 /****new topic wall****/
-/* line 250, app.scss */
+/* line 255, app.scss */
 #wish {
   width: 100%;
   height: 500px;
@@ -243,7 +249,7 @@ ul.newsticker span {
   background: aliceblue;
   border-radius: 5px; }
 
-/* line 258, app.scss */
+/* line 263, app.scss */
 .wish {
   width: 185px;
   height: 166px;
@@ -251,28 +257,28 @@ ul.newsticker span {
   color: black;
   cursor: move;
   padding: 10px 20px 30px 20px; }
-  /* line 265, app.scss */
+  /* line 270, app.scss */
   .wish img {
     display: inline-block; }
-  /* line 268, app.scss */
+  /* line 273, app.scss */
   .wish .time {
     display: inline-block;
     margin-top: 10px;
     margin-right: 5px;
     float: right; }
 
-/* line 275, app.scss */
+/* line 280, app.scss */
 .wish_mark {
   background: url(../images/wall_icon.png) no-repeat 0 0; }
 
-/* line 278, app.scss */
+/* line 283, app.scss */
 .wish p {
   white-space: normal;
   padding-top: 10px;
   height: 100px;
   overflow: hidden; }
 
-/* line 284, app.scss */
+/* line 289, app.scss */
 .wish .close {
   display: block;
   position: absolute;
@@ -284,7 +290,7 @@ ul.newsticker span {
   display: none;
   cursor: pointer; }
 
-/* line 291, app.scss */
+/* line 296, app.scss */
 .wish_footer {
   position: absolute;
   bottom: 30px;
@@ -292,23 +298,23 @@ ul.newsticker span {
 
 /**** end of new topic wall****/
 /****messages.html*****/
-/* line 301, app.scss */
-#message2 {
-  clear: both; }
+/* line 306, app.scss */
+#messages-list {
+  position: relative; }
 
 /**dayviews.html****/
-/* line 306, app.scss */
+/* line 311, app.scss */
 #dayviewsTab {
   border-bottom: 2px solid #ffa93c;
   padding-bottom: 1px;
   padding-left: 10px; }
-  /* line 311, app.scss */
+  /* line 316, app.scss */
   #dayviewsTab .active > a, #dayviewsTab .active > a:hover, #dayviewsTab .active > a:focus {
     background: #ffa93c;
     border: 1px solid #FDC987;
     border-bottom: 1px solid #ffa93c; }
 
-/* line 320, app.scss */
+/* line 325, app.scss */
 .little-star {
   display: inline-block;
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA6lJREFUeNq0VdtLFFEc/mZmXfO2FnaxC8XGhmFZRjeCgiDqJXoIeqkoCIQICnos7Km/oKinQAgCX3qIHoIg6ClQhMguCJa6XrKsLTPNdtu5nL7fnDPuaqv71GG+OTNzzvl+999Y6vVq/DMswubN4VxBfAqAnLoMhVYE6jo2OBk4XPcVsP0Llhox+CXIraLnGZJMqwOwcSf85iOOr8F5rKH0wEK5YYebIqhotvWz4CsFeGhH9XJg514KsM5gGk3IFWuylACfZIFTgJLZ1kJ+k+AndiNvHcemJiDPb3aVA9e6hozS+8oKkMuytM9Dv9vaiiwxoUTjdlTWkhwaTdtl/RxmkMJsWX7GIMt7lkH0hAx65oUg9HcLcRKpZpIrfUIUsCsd+Pl2jPsXylvwiaw/ldbYjfxvb6SWB6n9LcRrJAZci8A9zTvEsnOM0VE8XJdaSoClHqzbB6VO0T1JxiwZpqJigkoK1tYDyS20RmnApG+MGElTse8I01XHuo/nxrkvTYVeYKXTiRNjvqUeb/yN76hCXQJIEKtW6tAIoa/mk4cqGUInipm8cH1ykinNoExNA/EcuZyLOD58L8YMmUBdLInGzZowDFygyZSBMKqi2pirl7kNFMQ0TtDihhVMjgG6nNaEqrrWEbj+KD72ac2zSqoW+GOyxjWx8Qyid1mTPbJXzsh7QO3GBmX9Ck4NPzEC7DRxCPlgAMPvqAl7g2treGUQCuMsteSRfHxE3i/idPpuIYukePL2KHGIB/rw7pU5WKT9YsibefIHyUeFpw3nB+/NT9PCgQniMNO1F0NjBZeUg9RH/4jPsxfQ9qHj3zrw5mmVoT9v4PM344Yy5OKaAbolh0e49P5+6Ur2rELGyMixkflR08P8NSzIJBk1zJzMVGqJZsfm5psm54eBa0F1AqEQz8TCMwi/mYr2jBL1DVL5zbi5NV5aQHjQEOTD1tyMBHPZVYX+VBED1lLTtWx6Ncs0sazJHsvR/4hs0FTaRW6RvTmakacA6f3yPc7DDexF75m+/TOyQ1pjFfbtZ5ugGbN/tPukBmzVwvvb0j+cyAKbFR1zalFdTeI6lj5/hz3dLP9fz7lvD7GBuI3uniz63wCNtKqqkhbSO/FY6yIuijIi/IMlUc8DPovmZQ/wOdPL78eII8RLYpK4SmyBG3Sgq9vHcD+QWi9uTC3yyzStR6OLeIrBoV7OZ4ldxLMFewTsmmgjtmE224mJL2k+d5Ru10rhfw4b/3n8FWAAwna8wfz7wJUAAAAASUVORK5CYII=");
@@ -317,99 +323,35 @@ ul.newsticker span {
   width: 32px;
   height: 32px; }
 
-/* line 328, app.scss */
+/* line 333, app.scss */
 .event:hover, .event:active {
   background: #cdcdcd; }
 
 /**scrollbar**/
-/* line 334, app.scss */
+/* line 339, app.scss */
 #events {
-  clear: both; }
-
-/* line 335, app.scss */
-.viewport {
-  height: 100%;
   overflow: hidden;
   position: relative; }
 
-/* line 336, app.scss */
-.overview {
-  list-style: none;
-  position: absolute;
-  left: 0;
-  top: 0; }
-
-/* line 338, app.scss */
-.thumb .end,
-.thumb {
-  background-color: #005580; }
-
-/* line 339, app.scss */
-.scrollbar {
-  position: relative;
-  float: right;
-  /**width: 15px;**/ }
-
-/* line 340, app.scss */
-.track {
-  background-color: #D8EEFD;
-  height: 100%;
-  width: 8px;
-  position: relative;
-  padding: 0 1px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px; }
-
-/* line 343, app.scss */
-.thumb {
-  height: 20px;
-  width: 8px;
-  cursor: pointer;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px; }
-
-/* line 346, app.scss */
-.thumb .end {
-  overflow: hidden;
-  height: 5px;
-  width: 8px; }
-
-/* line 347, app.scss */
-.disable {
-  display: none; }
-
-/* line 348, app.scss */
-.noSelect {
-  user-select: none;
-  -o-user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none; }
-
 /**teacher-comment***/
-/* line 352, app.scss */
+/* line 342, app.scss */
 .meals-well {
   padding: 5px; }
 
-/* line 355, app.scss */
+/* line 345, app.scss */
 .teacher-comment {
   margin-bottom: 45px; }
 
-/* line 358, app.scss */
+/* line 348, app.scss */
 #activity .form-horizontal .control-label {
   width: 100px; }
 
-/* line 361, app.scss */
+/* line 351, app.scss */
 #activity .form-horizontal .controls {
   margin-left: 120px; }
 
 /***meal image carousel***/
-/* line 368, app.scss */
+/* line 358, app.scss */
 #mealsCarousel .thumbnail {
   height: 120px;
   overflow: hidden;
@@ -419,19 +361,19 @@ ul.newsticker span {
   -moz-box-shadow: 0 12px 12px -10px #c4c4c4; }
 
 /***photoviews.html****/
-/* line 382, app.scss */
+/* line 372, app.scss */
 .photo-thumb {
   width: 23.5%;
   margin: 5px;
   background: pink; }
-  /* line 387, app.scss */
+  /* line 377, app.scss */
   .photo-thumb .text {
     padding: 5px 0 0 5px; }
 
-/* line 391, app.scss */
+/* line 381, app.scss */
 .tools {
   padding: 3px; }
-  /* line 393, app.scss */
+  /* line 383, app.scss */
   .tools a {
     margin: 0 0 0 12px;
     text-decoration: none;
@@ -440,15 +382,15 @@ ul.newsticker span {
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px; }
-    /* line 402, app.scss */
+    /* line 392, app.scss */
     .tools a:hover, .tools a:active {
       background: #fff; }
 
-/* line 407, app.scss */
+/* line 397, app.scss */
 .author {
   padding: 5px;
   border-top: 1px solid #cdcdcd; }
-  /* line 410, app.scss */
+  /* line 400, app.scss */
   .author .avatar {
     width: 32px;
     height: 32px;
@@ -458,7 +400,7 @@ ul.newsticker span {
     margin: 3px 0; }
 
 /**photo.html***/
-/* line 424, app.scss */
+/* line 414, app.scss */
 .distribute img {
   float: left;
   width: 60px;
@@ -467,37 +409,37 @@ ul.newsticker span {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px; }
-/* line 434, app.scss */
+/* line 424, app.scss */
 .distribute .info .name {
   font-weight: bolder;
   font-size: 1.1em; }
-/* line 438, app.scss */
+/* line 428, app.scss */
 .distribute .info .time {
   color: #000;
   margin: 2px 0 0 12px; }
 
-/* line 445, app.scss */
+/* line 435, app.scss */
 .photo-large {
   margin: 20px 0 0 0;
   background: #ccc;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px; }
-  /* line 451, app.scss */
+  /* line 441, app.scss */
   .photo-large img {
     padding: 20px; }
 
-/* line 455, app.scss */
+/* line 445, app.scss */
 .responses {
   margin: 5px; }
-  /* line 458, app.scss */
+  /* line 448, app.scss */
   .responses .comments-section ol {
     list-style: none; }
-  /* line 462, app.scss */
+  /* line 452, app.scss */
   .responses .comments-section .comments .comment {
     border-bottom: 1px solid #cdcdcd;
     padding: 15px 0; }
-    /* line 465, app.scss */
+    /* line 455, app.scss */
     .responses .comments-section .comments .comment .avatar {
       width: 32px;
       height: 32px;
@@ -506,81 +448,81 @@ ul.newsticker span {
       border-radius: 3px;
       float: left;
       margin-right: 15px; }
-    /* line 474, app.scss */
+    /* line 464, app.scss */
     .responses .comments-section .comments .comment p {
       margin-left: 47px;
       padding-top: 10px; }
-    /* line 478, app.scss */
+    /* line 468, app.scss */
     .responses .comments-section .comments .comment .time {
       margin-left: 47px; }
 
-/* line 486, app.scss */
+/* line 476, app.scss */
 .meta-actions {
   padding-top: 10px; }
-  /* line 488, app.scss */
+  /* line 478, app.scss */
   .meta-actions .meta-action {
     border-bottom: 1px solid #ddd;
     line-height: 1.4em;
     padding: 12px; }
 
 /***infoviews.html*****/
-/* line 497, app.scss */
+/* line 487, app.scss */
 .sidebar .col-nav li a {
   border-bottom: none; }
-  /* line 499, app.scss */
+  /* line 489, app.scss */
   .sidebar .col-nav li a .title {
     padding-left: 10px; }
 
-/* line 503, app.scss */
+/* line 493, app.scss */
 .sidebar ul.col-nav {
   border-bottom: 1px solid #eee;
   padding: 5px 0; }
 
-/* line 507, app.scss */
+/* line 497, app.scss */
 .info-list {
   list-style: none;
   margin: 0; }
-  /* line 511, app.scss */
+  /* line 501, app.scss */
   .info-list .item {
     border-bottom: 1px solid #eeeeee;
     padding: 10px 15px; }
-    /* line 515, app.scss */
+    /* line 505, app.scss */
     .info-list .item .title {
       margin: 0;
       color: blue;
       font-size: 1.3em; }
-  /* line 528, app.scss */
+  /* line 518, app.scss */
   .info-list li.item:hover {
     border-bottom: 1px solid #eee;
     border-top: 2px solid #33aa33;
     padding: 10px 15px;
     background: #eee; }
-    /* line 533, app.scss */
+    /* line 523, app.scss */
     .info-list li.item:hover a {
       text-decoration: none; }
 
 /***forumviews.html**********/
-/* line 542, app.scss */
+/* line 532, app.scss */
 ul.forum-list {
   list-style: none; }
-  /* line 544, app.scss */
+  /* line 534, app.scss */
   ul.forum-list li {
     border-bottom: 1px solid #7c99e4;
     padding: 0px 5px;
     margin-top: 5px; }
-    /* line 549, app.scss */
+    /* line 539, app.scss */
     ul.forum-list li .item-body {
       margin-left: 65px; }
-      /* line 551, app.scss */
+      /* line 541, app.scss */
       ul.forum-list li .item-body .content {
         margin-right: 70px;
         height: 3em;
         overflow: hidden; }
-        /* line 555, app.scss */
+        /* line 545, app.scss */
         ul.forum-list li .item-body .content a {
           text-decoration: none;
           color: rgba(80, 72, 72, 0.8); }
-  /* line 562, app.scss */
+  /* line 552, app.scss */
   ul.forum-list .title {
     cursor: pointer;
     font-size: 1.1em;
@@ -589,14 +531,14 @@ ul.forum-list {
     font-weight: bold; }
 
 /*****settings.html*******/
-/* line 574, app.scss */
+/* line 564, app.scss */
 .big-photos {
   height: 180px;
   background: antiquewhite;
   text-align: center;
   margin: 0 auto; }
 
-/* line 581, app.scss */
+/* line 571, app.scss */
 .day-words {
   padding: 5px;
   border: 1px solid #eee;
@@ -605,10 +547,10 @@ ul.forum-list {
   height: 200px;
   margin-bottom: 20px; }
 
-/* line 590, app.scss */
+/* line 580, app.scss */
 .flower-block {
   margin-bottom: 15px; }
 
-/* line 594, app.scss */
+/* line 584, app.scss */
 .twitter-block {
   margin-bottom: 5px; }
