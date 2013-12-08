@@ -585,3 +585,18 @@ ul.forum-list{
 	margin-bottom:5px;
 }
 
+#wish_tree_container{
+	width:100%; 
+	margin: 0 auto; 
+
+	.item {
+	width: 408px;
+	margin: 20px 10px 10px 10px;
+	float: left;
+	background-color:#ffffff;
+	border:solid 1px #B4BBCD;
+	min-height:50px;
+	text-align:justify;
+	word-wrap:break-word; 
+	}
+}

@@ -554,3 +554,18 @@ ul.forum-list {
 /* line 584, app.scss */
 .twitter-block {
   margin-bottom: 5px; }
+
+/* line 588, app.scss */
+#wish_tree_container {
+  width: 100%;
+  margin: 0 auto; }
+  /* line 592, app.scss */
+  #wish_tree_container .item {
+    width: 408px;
+    margin: 20px 10px 10px 10px;
+    float: left;
+    background-color: #ffffff;
+    border: solid 1px #B4BBCD;
+    min-height: 50px;
+    text-align: justify;
+    word-wrap: break-word; }
